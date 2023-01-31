@@ -1,0 +1,29 @@
+a{
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration:none;
+}
+
+header img.profile{
+    border-radius: 100%;
+}
+
+.text-small{
+    font-size:0.85rem;
+}
+
+.card{
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.badge a{
+    color: white;
+}
+
