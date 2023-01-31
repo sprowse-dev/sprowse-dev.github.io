@@ -1,9 +1,326 @@
-<html>
- 
-<body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+      
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+      
+    <!--Enables Bootstrap Tooltip popups-->
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+    <!--Function to copy text to clipboard-->
+    <script>
+        function copyToClip() {
+          /* Get the text field */
+          var copyText = document.getElementById("myInput");
+
+          /* Select the text field */
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+          /* Copy the text inside the text field */
+          document.execCommand("copy");
+
+          /* Alert the copied text */
+          alert("Copied!");
+        }
+    </script>
+      
+      
+    <title>Sam Prowse</title>
+  </head>
+  <body>
+    <div class="container-fluid pt-5 pb-5">
+        <header class="sticky-top">
+            <div class="container text-center">
+                <img class="profile mb-4" src="samp.jpg" width="150" height="150" alt="Photo of Sam"/>
+                <h1 class="title">Sam Prowse</h1>
+                <h4 class="font-weight-lighter mb-4">Front-End Developer</h4>
+                
+                <button class="btn btn-primary pt-1 pb-2" data-toggle="collapse" href="#collapseEmail" role="button" aria-expanded="false" aria-controls="collapseEmail">      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                </button>
+                
+                
+                <button class="btn btn-outline-primary" data-toggle="collapse" href="#collapseResume" role="button" aria-expanded="false" aria-controls="collapseResume">Resume</button>
+                
+                <!--<a href="https://www.linkedin.com/in/sam-prowse-aa316058/" target="_blank"><img src="linkedin.png" width="40" height="40"/></a>-->
+                
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collapse mt-5" id="collapseEmail">
+                            <div class="card card-body border-top-0 border-bottom-0 border-info">
+                                <!-- The text field -->
+                                
+                                <input type="text" value="sprowseart@gmail.com" id="myInput">
+
+                                <!-- The button used to copy the text -->
+                                <button type="button" onclick="copyToClip()" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                  Copy
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!--Resume section-->
+                
+                
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-9 col-lg-6">
+                        <div class="collapse mt-5 mb-5 border-top pt-5" id="collapseResume">
+                            <h5 class="title text-primary">Education</h5>
+                            <h6 class="subtitle">The College of New Jersey  
+                            <span class="text-small font-weight-light">| 2009-2013</span></h6><p class="font-weight-light">BFA Digital Art, Minor Computer Science</p>
+                            
+                            <br>
+                            
+                            <h5 class="title text-primary">Certificates</h5>
+                            <h6 class="subtitle">Codecademy</h6>
+                            <p class="font-weight-light">
+                                Web Development <span class="text-muted font-weight-lighter">2020</span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="webdev-codecademy.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                    <br>
+                                PHP <span class="text-muted font-weight-lighter">2020</span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="php-codecademy.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                 <br>
+                                SQL <span class="text-muted font-weight-lighter">2020</span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="sql-codecademy.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                 <br>
+                                JavaScript <span class="text-muted font-weight-lighter">2020</span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="js-codecademy.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                    <br>
+                                Bootstrap <span class="text-muted font-weight-lighter">2020</span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="bootstrap-codecademy.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                            </p>
+                            
+                            <br>
+                            
+                            <h5 class="title text-primary">Work Experience</h5>
+                            <h6 class="subtitle">Tabrasa, LLC
+                            <span class="text-small font-weight-light">| 2014-Present</span></h6>
+                            <p class="font-weight-light">Web and Print Production Designer</p>
+                            
+                            <br>
+                            
+                            <h6 class="subtitle">Hopeworks 'N Camden
+                            <span class="text-small font-weight-light">| March - November 2014</span></h6>
+                            <p class="font-weight-light">Web and UX Designer</p>
+                            
+                            <br>
+                            
+                            <h6 class="subtitle">The Green Economy
+                            <span class="text-small font-weight-light">| Fall 2012</span></h6>
+                            <p class="font-weight-light">Web Development Intern</p>
+                            
+                            <br>
+                            
+                            <h6 class="subtitle">The College of New Jersey
+                            <span class="text-small font-weight-light">| May 2013 - March 2014</span></h6>
+                            <p class="font-weight-light">Web Designer and Content Manager</p>
+                            
+                            <br>
+                            <button type="button" class="btn btn-outline-primary" onclick="document.location='https://www.linkedin.com/in/sam-prowse-aa316058/'">Linkedin</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </header>
+    </div>
+      
+    <div class="container-fluid bg-light pt-5">
+        
+        <div class="container">
+        
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    
+                    
+                    
+                    <div class="card mb-5">
+                        <a href="#" target="_blank">
+                            <div class="card-body">
+                                <h5 class="card-title">Green.</h5>
+                                <h6 class="card-subtitle">Custom Wordpress Site</h6>
+                                <p class="card-text">HTML, CSS, PHP, Wordpress CMS</p>
+                            </div>
+
+                            <img src="proj1.jpg" class="card-img-bottom border-top" alt="Image of the project."/>
+                        </a>
+
+                    </div>
+                    
+                    
+                    <div class="card mb-5">
+
+
+                        <div class="card-body">
+                            <h5 class="card-title">Project</h5>
+                            <p class="card-text">HTML, CSS, PHP, Wordpress</p>
+                        </div>
+
+                    </div>
+
+                    
+                    
+                    
+                </div>
+                
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    
+                    
+                    
+                    <div class="card mb-5">
+
+                        <img src="" class="card-img-top" alt=""/>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Tabrasa Email Templates</h5>
+                            <p class="card-text">Mobile-responsive HTML/CSS, tested in Email on Acid</p>
+                        </div>
+                        
+                        <ul class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">You Magazine</a>
+                            <a href="#" class="list-group-item list-group-item-action">Real Insight</a>
+                            <a href="#" class="list-group-item list-group-item-action">Homes &amp; Money</a>
+                            <a href="#" class="list-group-item list-group-item-action">Quick Tips</a>
+                            <a href="#" class="list-group-item list-group-item-action">The Loan Process</a>
+                            <a href="#" class="list-group-item list-group-item-action">Loan Milestone Videos</a>
+                        </ul>
+
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="card mb-5">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><a href="">Cras justo odio</a></li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    
+                    
+                    
+                   <div class="card mb-5">
+                      <div class="card-body">
+                        <h5 class="card-title">onTrack</h5>
+                        <p class="card-text">A web app to keep track of meetings, appointments, to do lists, notes, and important events all in one place.</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><a href="">Cras justo odio</a></li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="card mb-5">
+
+                        <img src="" class="card-img-top" alt=""/>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Project</h5>
+                            <p class="card-text">HTML, CSS, PHP, Wordpress</p>
+                        </div>
+
+                    </div>
+
+                    
+                    
+                    
+                </div>
+                
+            </div>
+       
+        </div>
+
+                
+        
+    </div>
+        
+    <footer>
+        <div class="container text-center pt-5 pb-3">
+            <h5 class="title">Portfolio Site</h5>
+            <p class="text-muted mb-4">HTML, Bootstrap, CSS</p>
+            <p class="text-muted text-small font-weight-lighter">&copy 2020 Sam Prowse</p>
+        </div>
+    </footer>
+
+
+  </body>
 </html>
