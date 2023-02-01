@@ -15,10 +15,6 @@ html, body {
   font-weight: 300;
 }
 
-ul {
-  text-align: right;
-}
-
 h1 {
   font-size: 20px;
 }
@@ -146,9 +142,12 @@ a:active { text-decoration: none; }
 }
 
 .navbar-brand {
-    padding: 20px;
+  padding: 20px;
 }
 
+.navbar .button {
+    float: left;
+}
 
 /*--------------------------------------------------------------
 # Banner
@@ -400,9 +399,7 @@ input[type=submit]:hover {
   color: #898989;
 }
 
-.nav-bottom {
-  text-align: right;  
-}
+
 
 /*--------------------------------------------------------------
 # Media Queries
@@ -423,3 +420,12 @@ input[type=submit]:hover {
     }
 
 }
+
+@media (max-width: 1000px) { 
+
+    .navbar .button {
+        margin: 10px 0px;
+    }
+
+}
+
