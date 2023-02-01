@@ -1,0 +1,402 @@
+/**
+* Template Name: BestLoan Sample Template 1
+* Author: Sam Prowse, Tabrasa
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+ul {
+  text-align: right;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-bottom: 40px;
+  font-size: 1.75em;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+    background-color: #ffc200;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.button {
+  padding:1em 1.25em 1em 1.25em;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: .8em;
+  border-radius: 12px;
+  font-weight: bold;
+  background-color: #edf3e5;
+  color: #84aa53;
+}
+
+.button a{
+  text-decoration: none;
+  color: #fa6019;
+}
+
+.button-2 {
+  width: 90px;
+  padding: 8px;
+  font-size: .75em;
+  text-align: center;
+  background-color: #84aa53;
+  color: #fff;
+}
+
+.button-2:hover {
+  background-color: #a0c274;
+}
+
+.about, .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog .button {
+  width: 220px;
+  margin: 100px auto 0px auto;
+}
+
+.form-row .button:hover {
+  background-color: #ffdfcd;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header {
+  width: 90%;
+  padding: 20px 0px 20px 0px;
+  background: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.header a {
+  color: #434;
+}
+
+.header .logo {
+}
+
+
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+.banner {
+  position: relative;
+  height: 400px;
+  width:100%;
+  background-image: url("img/banner.jpg");
+  background-size: cover;
+  background-color: #999;
+}
+
+.banner p {
+  margin-bottom: 10px;
+  text-shadow: 0 0;
+  font-size: .75em;
+  color: #666;
+}
+
+.banner .row {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.blurb-box {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.blurb {
+  max-width: 600px;
+  margin: 20px auto 30px auto;
+  text-align: left;
+  font-size: .85em;
+}
+
+#spacer {
+    height: 6px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+.about, .team, .testimonials, .blog {
+  padding: 60px 20px 100px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.team, .blog {
+  background-color: #FFF;
+}
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about .row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+.about img {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+.team p {
+    font-style: italic;
+}
+
+.team img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.team .row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonial Section
+--------------------------------------------------------------*/
+
+.testimonials .col{
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 10px #e5e5e5);
+}
+
+.testimonials .quote{
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.testimonials .row{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials p {
+  margin-bottom: 40px;
+}
+
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+
+.blog .col {
+  margin: 35px 0px 35px 0px;
+}
+
+.blog img {
+  width: 270px;
+  margin-bottom: 20px;
+} 
+
+.blog .row {
+  text-align: left;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  padding: 50px 30px;
+  background-color: #000;
+  color: #d8d8d8;
+}
+
+.footer hr{ 
+  border-top: 1px solid #353633;
+}
+
+.footer h3 {
+  font-size: 20px;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size:1em;
+}
+
+.footer .logo{
+  margin-bottom: 10px; 
+}
+
+.footer ul{
+  text-align: left;
+  list-style-type: none;
+}
+
+.footer .list{
+  padding-bottom: 40px;
+}
+
+.email-field {
+  padding: 8px;
+  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+input[type=text], select {
+  margin: 10px 0px 0px 0px; 
+  padding: 10px 20px;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #30366d;
+  filter: drop-shadow(0px 0px 2px #999);
+}
+
+select {
+  -webkit-appearance: none;
+  height:50px;
+  background:transparent;
+  background: url("img/arrow-5.png") no-repeat #FFF;
+  background-position: right;
+  border:0;
+  border-bottom: 1px solid #30366d;
+  border-radius:0px;
+  color: #999;
+}
+
+input[type=submit] {
+  margin: 10px 0px 0px 0px; 
+  border: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background-color: #4CAF50;
+  border-radius: 0px 10px 10px 0px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+
+.copyright {
+  padding: 20px 30px 20px 30px;
+  font-size: 12px;
+  background-color: #1a1a1a;
+  color: #7e7e7e;
+}
+
+.copyright p{
+  margin-bottom: 0;
+  font-size:12px;
+}
+
+.copyright a{
+  color: #767676;
+}
+
+.copyright a:hover{
+  color: #898989;
+}
+
+.nav-bottom {
+  text-align: right;  
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width: 700px) { 
+    
+    .nav-bottom {
+      text-align: left;  
+    }
+    
+    .team img {
+      width: 100px;
+    }
+    
+    .blog .col {
+        text-align: center;
+    }
+
+}
