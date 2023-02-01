@@ -54,6 +54,14 @@ a:active { text-decoration: none; }
     background-color: #ffc200;
 }
 
+.page-text {
+    text-align: left;
+}
+
+.article-image {
+    float: right;
+}
+
 
 
 
@@ -85,6 +93,16 @@ a:active { text-decoration: none; }
   text-align: center;
   background-color: #84aa53;
   color: #fff;
+}
+
+.button-3 {
+  width: 180px;
+  padding: 10px;
+  margin: 100px auto 0px auto;
+  font-size: 1em;
+  text-align: center;
+  background-color: #84aa53;
+  color: #fff; 
 }
 
 .button-2:hover {
@@ -119,13 +137,17 @@ a:active { text-decoration: none; }
   border-bottom: 1px solid #FFF;
 }
 
-.header a {
+.navbar a {
   color: #434;
 }
 
-.header .logo {
+.navbar a:hover {
+  color: #777;
 }
 
+.navbar-brand {
+    padding: 20px;
+}
 
 
 /*--------------------------------------------------------------
@@ -139,6 +161,7 @@ a:active { text-decoration: none; }
   background-image: url("img/banner.jpg");
   background-size: cover;
   background-color: #999;
+  background-position: center center;
 }
 
 .banner p {
