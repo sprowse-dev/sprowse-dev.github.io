@@ -59,3 +59,14 @@ header img.profile{
     color: white;
 }
 
+.image-block {
+    background-color: #414e63;
+}
+
+.image-block img {
+    opacity: 0.9;
+}
+
+.image-block img:hover{
+    opacity: 1;
+}
