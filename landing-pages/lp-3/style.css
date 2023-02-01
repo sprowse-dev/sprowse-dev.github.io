@@ -1,0 +1,271 @@
+/**
+* Template Name: BestLoan Sample Template 3
+* Author: Sam Prowse, Tabrasa
+*/
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  text-align: right;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+  padding: 1em;
+  color:#FFF;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.container {
+  margin: 0 auto;
+}
+
+#middle {
+    width:100%;
+}
+
+.main {
+    background-color: #ffc200;
+}
+
+
+
+/**** Header Section ****/
+
+.header {
+  padding: 20px 40px 20px 40px;
+}
+
+.header img {
+  padding-top:5px;
+}
+
+.button {
+  max-width: 115px;
+  padding:1em 1.5em 1em 1.5em;
+  text-align: center;
+  font-size: .75em;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: #c23b4b;
+  color: #ffa290;
+}
+
+.button a{
+  color: #ffa290;
+}
+
+.header .contact{
+  margin-top: 10px;
+  font-size:.75em;
+  color:#FFF;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Main Body
+--------------------------------------------------------------*/
+
+
+.main-body {
+  min-height:900px;
+  background: #FFF;
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.main-body .left-side {
+  min-height:900px;
+    padding: 0;
+    margin: 0;
+}
+
+.bigtext {
+  padding: 60px;
+}
+
+.right-side {
+   padding: 30px 30px 80px 30px; 
+}
+
+
+
+/*--------------------------------------------------------------
+# Form
+--------------------------------------------------------------*/
+
+.form-section {
+  width:500px;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #FFF;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 5px #6a7684);
+  text-align: center;
+  font-size: .85em;
+  color: #000;
+}
+
+.form-section .form-fields {
+  padding: 2em;
+}
+
+.form-header {
+  background-color:#c23b4b;
+  border-radius: 10px 10px 0px 0px; 
+}
+
+form {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-section .button {
+  max-width: 130px;
+  margin-top: 30px;
+  padding:1em 1.5em 1em 1.5em;
+  background-color: #c23b4b;
+  border-radius: 25px;
+  color: #FFF;
+}
+
+.form-section .button:hover {
+  background-color: #d64d4d;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  margin: 10px 0; 
+  padding: 12px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #30366d;
+  filter: drop-shadow(0px 0px 2px #999);
+}
+
+select {
+  -webkit-appearance: none;
+  height:50px;
+  background:transparent;
+  background: url("img/arrow-5.png") no-repeat #FFF;
+  background-position: right;
+  border:0;
+  border-bottom: 1px solid #30366d;
+  border-radius:0px;
+  color: #999;
+}
+
+input[type=submit] {
+  width: 100%;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  background-color: #4CAF50;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  padding: 50px 30px;
+  background-color: #FFF;
+  color: #808080;
+}
+
+.footer h3 {
+  font-size: 20px;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size:12px; 
+}
+
+.footer .logo{
+  margin-bottom: 10px; 
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+
+.copyright {
+  padding: 20px 30px 20px 30px;
+  background-color: #1d384b;
+  font-size: 12px;
+  color: #748191;
+}
+
+.copyright p{
+  margin-bottom: 0;
+  font-size:12px; 
+}
+
+.copyright a{
+  color: #748191;
+}
+
+.copyright a:hover{
+  color: #8b9db3;
+}
+
+.nav-bottom {
+  text-align: right;  
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width: 700px) { 
+    
+    .nav-bottom {
+      text-align: left;  
+    }
+
+}

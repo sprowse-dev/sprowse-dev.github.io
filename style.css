@@ -19,6 +19,19 @@ header img.profile{
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
 }
 
+.card-subtitle {
+    font-weight: 300;
+}
+
+.card-text {
+    color: #777;
+    font-weight: 200;
+}
+
+.card-link {
+    color: 
+}
+
 .card:hover{
     transform: scale(1.02);
 }
