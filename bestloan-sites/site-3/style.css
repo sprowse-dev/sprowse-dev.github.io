@@ -1,0 +1,547 @@
+/**
+* Template Name: BestLoan Sample Template 1
+* Author: Sam Prowse, Tabrasa
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: #4b60a3;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #161735;
+}
+
+h2 {
+  margin-bottom: 60px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #000;
+}
+
+h4 {
+  margin-bottom: 40px;
+  font-size: 1.75em;
+}
+
+h5 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+h6 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+    background-color: #ffc200;
+}
+
+.page-text {
+    text-align: left;
+}
+
+.article-image {
+    float: right;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.button {
+  padding:1em 1.25em 1em 1.25em;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: .8em;
+  border-radius: 100px;
+  font-weight: bold;
+  color: #4b60a3;
+  border: 1px solid #4b60a3;
+}
+
+.button:hover {
+  background-color: #4b60a3;
+  color: #fff;
+}
+
+.button a{
+  text-decoration: none;
+  color: #fa6019;
+}
+
+.button-2 {
+  width: 90px;
+  padding: 8px;
+  font-size: .75em;
+  text-align: center;
+  background-color: #76b5fa;
+  color: #fff;
+}
+
+.button-3 {
+  width: 180px;
+  padding: 10px;
+  margin: 100px auto 0px auto;
+  font-size: 1em;
+  text-align: center;
+  background-color: #4b60a3;
+  color: #fff; 
+}
+
+.button-4 {
+  width: 200px;
+  padding: 10px;
+  margin: 100px auto 0px auto;
+  font-size: 1em;
+  text-align: center; 
+  border-radius: 25px;
+  background-color: #4b60a3;
+  color: #fff; 
+}
+
+.button-2:hover {
+  background-color: #538ed1;
+}
+
+.button-4:hover {
+  background-color: #538ed1;
+}
+
+.about, .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog .button {
+  width: 220px;
+  margin: 100px auto 0px auto;
+}
+
+.form-row .button:hover {
+  background-color: #6178c2;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header {
+  width: 90%;
+  padding: 20px 0px 20px 0px;
+  background: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.navbar a {
+  color: #434;
+}
+
+.navbar a:hover {
+  color: #777;
+}
+
+.navbar-brand {
+  padding: 20px;
+}
+
+.navbar .button {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+.banner {
+  position: relative;
+  height: 650px;
+  width:100%;
+  background-image: url("img/banner.jpg");
+  background-size: cover;
+  background-color: #999;
+  background-position: center center;
+}
+
+.banner p {
+  margin-bottom: 10px;
+  text-shadow: 0 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.banner .row {
+  width: 85%;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.blurb-box {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.blurb {
+  max-width: 600px;
+  margin: 20px auto 30px auto;
+  text-align: left;
+  font-size: .85em;
+}
+
+#spacer {
+  height: 6px;
+}
+
+.page-banner {
+  height: 200px;
+  background-image: url("img/page-banner.jpg");
+  background-size: cover;
+  background-color: #999;
+  background-position: center center;
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+.about, .team, .testimonials, .blog, .products {
+  padding: 60px 20px 100px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.team, .blog {
+  background-color: #FFF;
+}
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about {
+  background-color: #161735;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.about .row {
+  width: 75%;
+  margin: auto;
+}
+
+.about h2 {
+  color: #fff; 
+  margin-bottom: 0px;
+}
+
+.about p {
+  color: #fff;
+}
+
+.about img {
+  float: right;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Products Section
+--------------------------------------------------------------*/
+
+.products {
+  background-color: #f7faff;
+}
+
+.products .row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+.products img {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+.team {
+  background-color: #d8effd;
+}
+
+.team p {
+    font-style: italic;
+}
+
+.team img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.team .row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonial Section
+--------------------------------------------------------------*/
+
+.testimonials {
+  background-color: #161735;
+}
+
+.testimonials h2 {
+  color: #fff;
+}
+
+.testimonials .col{
+  margin: 20px;
+  padding: 40px;
+  background-color: #f7faff;
+  border-radius: 20px;
+}
+
+.testimonials .quote{
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.testimonials .row{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials p {
+  margin-bottom: 40px;
+}
+
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+
+.blog .col {
+  margin: 35px 0px 35px 0px;
+}
+
+.blog img {
+  width: 270px;
+  margin-bottom: 20px;
+} 
+
+.blog .row {
+  text-align: left;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  padding: 50px 30px;
+  background-color: #161735;
+  color: #d8d8d8;
+}
+
+.footer .row {
+  width: 95%;
+  margin: auto;
+}
+
+.footer hr{ 
+  border-top: 1px solid #353633;
+}
+
+.footer h3 {
+  font-size: 20px;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size:1em;
+}
+
+.footer .logo{
+  margin-bottom: 10px; 
+}
+
+.footer ul{
+  text-align: left;
+  list-style-type: none;
+}
+
+.footer .list{
+  padding-bottom: 40px;
+}
+
+.email-field {
+  padding: 8px;
+  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+input[type=text], select {
+  margin: 10px 0px 0px 0px; 
+  padding: 10px 20px;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #30366d;
+  filter: drop-shadow(0px 0px 2px #999);
+}
+
+select {
+  -webkit-appearance: none;
+  height:50px;
+  background:transparent;
+  background: url("img/arrow-5.png") no-repeat #FFF;
+  background-position: right;
+  border:0;
+  border-bottom: 1px solid #30366d;
+  border-radius:0px;
+  color: #999;
+}
+
+input[type=submit] {
+  margin: 10px 0px 0px 0px; 
+  border: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background-color: #4b60a3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+input[type=submit]:hover {
+  background-color: #6178c2;
+}
+
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+
+.copyright {
+  padding: 20px 30px 20px 30px;
+  font-size: 12px;
+  background-color: #0e0d1f;
+  color: #888890;
+}
+
+.copyright p{
+  margin-bottom: 0;
+  font-size:12px;
+}
+
+.copyright a{
+  color: #767676;
+}
+
+.copyright a:hover{
+  color: #898989;
+}
+
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width: 700px) { 
+    
+    .about {
+      padding-bottom: 60px;
+    }
+    
+    .about .row {
+      width: 90%;
+      
+    }
+    
+    .about img {
+      text-align: center;
+    }
+    
+    .nav-bottom {
+      text-align: left;  
+    }
+    
+    .team img {
+      width: 100px;
+    }
+    
+    .blog .col {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1000px) { 
+
+    .navbar .button {
+        margin: 10px 0px;
+    }
+
+}
+
