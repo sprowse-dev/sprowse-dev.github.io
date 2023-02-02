@@ -307,7 +307,7 @@ a:active { text-decoration: none; }
 }
 
 .products .row {
-  width: 85%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
@@ -328,6 +328,7 @@ a:active { text-decoration: none; }
   background-color: #d8effd;
 }
 
+
 .team p {
     font-style: italic;
 }
@@ -338,7 +339,7 @@ a:active { text-decoration: none; }
 }
 
 .team .row {
-  width: 85%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -396,6 +397,42 @@ a:active { text-decoration: none; }
 .blog .row {
   text-align: left;
 }
+
+
+/*--------------------------------------------------------------
+# Blog Page
+--------------------------------------------------------------*/
+
+.blog-page {
+   padding: 60px 20px 100px 20px; 
+}
+
+.blog-page .row {
+  width: 85%;
+  margin: auto;
+}
+
+.blog-page h2 {
+  margin-bottom: 60px;
+}
+
+.blog-page img {
+  margin-bottom: 20px;
+}
+
+.blog-page .button-2{
+  margin-bottom: 30px;
+}
+
+.blog-page h2 {
+  margin-bottom: 60px;
+}
+
+.article h2 {
+  margin-bottom: 60px;
+}
+
+
 
 
 /*--------------------------------------------------------------
