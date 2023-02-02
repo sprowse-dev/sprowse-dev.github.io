@@ -339,7 +339,7 @@ a:active { text-decoration: none; }
 }
 
 .team .row {
-  width: 50%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -371,7 +371,7 @@ a:active { text-decoration: none; }
 }
 
 .testimonials .row{
-  width: 85%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
