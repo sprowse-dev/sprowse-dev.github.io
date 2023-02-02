@@ -50,6 +50,7 @@ h5 {
   font-style: italic;
   font-weight: 300;
   font-size: 1em;
+  margin-bottom: 40px;
 }
 
 h6 {
@@ -91,7 +92,7 @@ a:active { text-decoration: none; }
 
 .button {
   padding:1em 1.25em 1em 1.25em;
-  width: 100px;
+  width: 120px;
   white-space: nowrap;
   text-align: center;
   font-size: .8em;
@@ -99,6 +100,7 @@ a:active { text-decoration: none; }
   font-weight: bold;
   color: #4b60a3;
   border: 1px solid #4b60a3;
+  transition: 0.75s;
 }
 
 .button:hover {
@@ -118,6 +120,7 @@ a:active { text-decoration: none; }
   text-align: center;
   background-color: #76b5fa;
   color: #fff;
+  transition: 0.75s;
 }
 
 .button-3 {
@@ -127,7 +130,8 @@ a:active { text-decoration: none; }
   font-size: 1em;
   text-align: center;
   background-color: #4b60a3;
-  color: #fff; 
+  color: #fff;  
+  transition: 0.75s;
 }
 
 .button-4 {
@@ -139,6 +143,7 @@ a:active { text-decoration: none; }
   border-radius: 25px;
   background-color: #4b60a3;
   color: #fff; 
+  transition: 0.75s;
 }
 
 .button-2:hover {
@@ -284,11 +289,12 @@ a:active { text-decoration: none; }
 
 .about p {
   color: #fff;
+  margin-bottom: 40px;
 }
 
 .about img {
-  float: right;
-  margin-left: 40px;
+  float: left;
+  margin-right: 40px;
   margin-bottom: 40px;
 }
 

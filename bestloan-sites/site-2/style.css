@@ -91,6 +91,7 @@ a:active { text-decoration: none; }
   color: #dc6f45;
   border: 1px solid #dc6f45;
   text-transform: uppercase;
+  transition: 0.75s;
 }
 
 .button:hover {
@@ -112,6 +113,7 @@ a:active { text-decoration: none; }
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
+  transition: 0.75s;
 }
 
 .team .button-2{
@@ -127,6 +129,7 @@ a:active { text-decoration: none; }
   color: #dc6f45;
   border: 1px solid #dc6f45;
   text-transform: uppercase;
+  transition: 0.75s;
 }
 
 .button-4 {
@@ -140,6 +143,7 @@ a:active { text-decoration: none; }
   margin-right: 20px;
   font-size: .75em;
   background-color: rgba(221, 79, 44, 0.8);
+  transition: 0.75s;
 }
 
 .button-4:hover {

@@ -75,6 +75,7 @@ a:active { text-decoration: none; }
   font-weight: bold;
   background-color: #edf3e5;
   color: #84aa53;
+  transition: 0.75s;
 }
 
 .button a{
@@ -89,6 +90,7 @@ a:active { text-decoration: none; }
   text-align: center;
   background-color: #84aa53;
   color: #fff;
+  transition: 0.75s;
 }
 
 .button-3 {
@@ -99,6 +101,7 @@ a:active { text-decoration: none; }
   text-align: center;
   background-color: #84aa53;
   color: #fff; 
+  transition: 0.75s;
 }
 
 .button-2:hover {
