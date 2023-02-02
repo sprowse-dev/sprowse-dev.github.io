@@ -1,0 +1,584 @@
+/**********************************************
+* Template Name: BestLoan Site 2 - Black Sample
+* Author: Sam Prowse, Tabrasa
+**********************************************/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.8em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+
+h4 {
+  font-size: 1.15em;
+  font-weight: 200;
+  margin: 20px 0px 20px 0px;
+}
+
+h5{
+  font-weight: 700;
+  font-size: 2.75em;
+}
+
+h6 {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.blurb p{
+  text-align: center;
+}
+
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+    background-color: #ffc200;
+}
+
+.page-text {
+    text-align: left;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.button {
+  padding:1em 1.25em 1em 1.25em;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: .8em;
+  color: #dc6f45;
+  border: 1px solid #dc6f45;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #dc6f45;
+  color: #fff;
+}
+
+.button a{
+  text-decoration: none;
+  color: #fa6019;
+}
+
+.button-2 {
+  width: 90px;
+  padding: 8px;
+  font-size: .6em;
+  text-align: center;
+  background-color: #dc6f45;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.team .button-2{
+  margin: auto;
+}
+
+.button-3 {
+  width: 180px;
+  padding: 10px;
+  margin: 100px auto 0px auto;
+  font-size: 1em;
+  text-align: center;
+  color: #dc6f45;
+  border: 1px solid #dc6f45;
+  text-transform: uppercase;
+}
+
+.button-4 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  min-width: 150px;
+  padding: 10px;
+  float: left;
+  margin-right: 20px;
+  font-size: .75em;
+  background-color: rgba(221, 79, 44, 0.8);
+}
+
+.button-4:hover {
+  background-color: #dd4f2c;
+}
+}
+
+.button-2:hover {
+  background-color: #f28a62;
+}
+
+.about, .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog .button {
+  width: 310px;
+  margin: 100px auto 0px auto;
+}
+
+.form-row .button:hover {
+  background-color: #ffdfcd;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header {
+  width: 90%;
+  background: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.navbar {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.navbar ul {
+  padding-left: 10px;
+}
+
+.navbar a {
+  color: #333;
+  font-size: .9em;
+}
+
+.navbar a:hover {
+  color: #777;
+}
+
+.navbar .button {
+  float: left;
+}
+
+.logo-box { 
+  background-color: #000;
+  padding: 10px 20px 10px 20px;
+  margin: 0 0;
+}
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+.banner {
+  position: relative;
+  padding: 0px;
+  height: 720px;
+  width:100%;
+  background-image: url("img/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner .image-box{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 720px;
+}
+
+.banner .row {
+  opacity: 1.0;
+  position: relative;
+  width: 60%;
+  padding: 200px 60px 200px 60px;
+}
+
+.banner p {
+  margin-bottom: 10px;
+  text-shadow: 0 0;
+  font-size: 1em;
+  color: #fff;
+}
+
+.blurb-box {
+  padding: 30px;
+  background-color: #fff;
+}
+
+#spacer {
+  height: 6px;
+}
+
+.page-banner {
+  height: 400px;
+}
+
+.page-banner .image-box{ 
+  height: 400px;
+}
+
+
+/*--------------------------------------------------------------
+# Ribbon
+--------------------------------------------------------------*/
+
+.ribbon {
+  background-image: linear-gradient(to right, #dd4f2c , #f3a057);
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.ribbon .row {
+  width: 85%;
+  margin: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+.about, .team, .testimonials, .blog {
+  padding: 60px 20px 100px 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.team, .blog, .blog-page{
+  background-color: #FFF;
+}
+
+.blog-page {
+   padding: 60px 20px 100px 20px; 
+}
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about .row {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+.about img {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+.team {
+    text-align: center;
+}
+
+.team img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.team .row {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team .button-2 {
+  margin-bottom: 30px;
+}
+
+.team p {
+    margin-bottom: 60px;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonial Section
+--------------------------------------------------------------*/
+
+.testimonials .col{
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 6px;
+  filter: drop-shadow(5px 5px 10px #e5e5e5);
+}
+
+.testimonials .quote{
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.testimonials .row{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials p {
+  margin-bottom: 40px;
+}
+
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+
+.blog {
+  background-color: #f0f0f0;
+}
+
+.blog .col {
+  margin: 20px 0px 20px 0px;
+}
+
+.blog img {
+  width: 390px;
+  margin-bottom: 20px;
+} 
+
+.blog .row {
+  text-align: left;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*--------------------------------------------------------------
+# Article Section
+--------------------------------------------------------------*/
+
+
+.article {
+    padding: 60px 0px 100px 0px;
+}
+
+.article h2{
+    margin-bottom: 30px;
+}
+
+.article-image {
+    float: right;
+    margin-left: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  padding: 50px 30px;
+  background-color: #000;
+  color: #d8d8d8;
+}
+
+.footer-top {
+    margin-bottom: 40px;
+}
+
+.footer h3 {
+  font-size: 20px;
+}
+
+.footer .subscribe-blurb {
+  margin-bottom: 10px;
+  font-size:.75em;
+}
+
+.footer .sub-button {
+    height: 41px;
+    width: 140px;
+    font-size: 0.65em;
+    font-weight: 500;
+}
+
+.footer .logo{
+  margin-bottom: 10px; 
+}
+
+.footer ul{
+  text-align: left;
+  list-style-type: none;
+}
+
+.footer .list{
+  padding-bottom: 40px;
+}
+
+.email-field {
+  font-size: 0.9em;
+  padding: 8px;
+  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+input[type=text], select {
+  margin: 10px 0px 0px 0px; 
+  padding: 10px 20px;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #30366d;
+  filter: drop-shadow(0px 0px 2px #999);
+}
+
+select {
+  -webkit-appearance: none;
+  height:50px;
+  background:transparent;
+  background: url("img/arrow-5.png") no-repeat #FFF;
+  background-position: right;
+  border:0;
+  border-bottom: 1px solid #30366d;
+  border-radius:0px;
+  color: #999;
+}
+
+input[type=submit] {
+  margin: 10px 0px 0px 0px; 
+  border: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background-color: #dc6f45;
+  border-radius: 0px 10px 10px 0px;
+}
+
+input[type=submit]:hover {
+  background-color: #f28a62;
+}
+
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+
+.copyright {
+  padding: 20px 30px 20px 30px;
+  font-size: 12px;
+  background-color: #1a1a1a;
+  color: #7e7e7e;
+}
+
+.copyright p{
+  margin-bottom: 0;
+  font-size:12px;
+}
+
+.copyright a{
+  color: #767676;
+}
+
+.copyright a:hover{
+  color: #f28a62;
+}
+
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width: 700px) { 
+    
+    h1 {
+      font-size: 2em;
+    }
+    
+    .nav-bottom {
+      text-align: left;  
+    }
+    
+    .team img {
+      width: 120px;
+    }
+    
+    .team h4{
+      font-size: 1em;
+    }
+    
+    .team .row {
+        width:100%;
+    }
+    
+    .blog .col {
+        text-align: left;
+    }
+    
+    .banner .row {
+        padding-top: 120px;
+        width: 100%;
+    }
+    
+    .banner .button-2 {
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 2em;
+    }
+
+}
+
+@media (max-width: 1000px) { 
+
+    .navbar .button {
+        margin: 10px 0px;
+    }
+
+}
+
