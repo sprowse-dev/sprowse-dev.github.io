@@ -145,7 +145,7 @@ a:active { text-decoration: none; }
 .button-4:hover {
   background-color: #dd4f2c;
 }
-}
+
 
 .button-2:hover {
   background-color: #f28a62;
@@ -290,6 +290,11 @@ a:active { text-decoration: none; }
   background-color: #FFF;
 }
 
+
+/*--------------------------------------------------------------
+# Blog Page
+--------------------------------------------------------------*/
+
 .blog-page {
    padding: 60px 20px 100px 20px; 
 }
@@ -298,6 +303,28 @@ a:active { text-decoration: none; }
   width: 90%;
   margin: auto;
 }
+
+.blog-page h2 {
+  margin-bottom: 60px;
+}
+
+.blog-page img {
+  margin-bottom: 20px;
+}
+
+.blog-page .button-2{
+  margin-bottom: 30px;
+}
+
+.blog-page h2 {
+  margin-bottom: 60px;
+}
+
+.article h2 {
+  margin-bottom: 60px;
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -342,9 +369,25 @@ a:active { text-decoration: none; }
 }
 
 .team p {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
+.team-page h2 {
+  margin-bottom: 60px;
+}
+
+.team-page p {
+  margin-bottom: 10px;
+}
+
+.team-page h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.team-page .row {
+  margin-bottom: 40px;
+}
 
 /*--------------------------------------------------------------
 # Testimonial Section
