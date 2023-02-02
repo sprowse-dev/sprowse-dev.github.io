@@ -41,6 +41,7 @@ h3 {
 
 .button-copy {
   margin-top: 20px;
+  float: left;
 }
 
 .email-address {
