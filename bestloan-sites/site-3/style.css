@@ -137,7 +137,7 @@ a:active { text-decoration: none; }
 .button-4 {
   width: 200px;
   padding: 10px;
-  margin: 100px auto 0px auto;
+  margin: 40px auto 0px auto;
   font-size: 1em;
   text-align: center; 
   border-radius: 25px;
@@ -345,6 +345,37 @@ a:active { text-decoration: none; }
   margin-bottom: 40px;
 }
 
+.team-page {
+   padding: 60px 20px 200px 20px; 
+}
+
+.team-page h2{
+  text-align: center;
+}
+
+.team-page .row {
+  width: 85%;
+  margin: auto;
+}
+
+.team-page .col {
+  padding-bottom: 40px;
+}
+
+
+.team-page img {
+  width: 200px;
+  padding: 20px;
+}
+
+.team-page p {
+  margin-bottom: 20px;
+}
+
+.team-page .button-2{
+  float: left;
+  margin-right: 10px;
+}
 
 /*--------------------------------------------------------------
 # Testimonial Section
@@ -407,6 +438,10 @@ a:active { text-decoration: none; }
    padding: 60px 20px 100px 20px; 
 }
 
+.blog-page h2 {
+  text-align: center;
+}
+
 .blog-page .row {
   width: 85%;
   margin: auto;
@@ -442,6 +477,16 @@ a:active { text-decoration: none; }
 .article {
   padding: 60px 0px 100px 0px;
 }
+
+.article h2 {
+  text-align: center;
+}
+
+.article img {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

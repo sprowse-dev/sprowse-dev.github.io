@@ -78,6 +78,11 @@ a:active { text-decoration: none; }
   transition: 0.75s;
 }
 
+.button:hover {
+  background-color: #d5e1c4; 
+  color: #688e38;
+}
+
 .button a{
   text-decoration: none;
   color: #fa6019;

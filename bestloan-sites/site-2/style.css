@@ -84,6 +84,7 @@ a:active { text-decoration: none; }
 
 .button {
   padding:1em 1.25em 1em 1.25em;
+  margin-top: 40px;
   max-width: 350px;
   white-space: nowrap;
   text-align: center;
@@ -92,11 +93,13 @@ a:active { text-decoration: none; }
   border: 1px solid #dc6f45;
   text-transform: uppercase;
   transition: 0.75s;
+  transition: transform .2s;
 }
 
 .button:hover {
   background-color: #dc6f45;
   color: #fff;
+  transform: scale(1.05);
 }
 
 .button a{
@@ -116,8 +119,20 @@ a:active { text-decoration: none; }
   transition: 0.75s;
 }
 
+.team .button {
+  width: 100px;
+}
+
+.team-profile .button {
+  width: 140px;
+}
+
 .team .button-2{
   margin: auto;
+}
+
+.team-profile .button-2{
+  margin-right: 10px;
 }
 
 .button-3 {
