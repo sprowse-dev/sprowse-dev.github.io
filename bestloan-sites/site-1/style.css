@@ -109,6 +109,10 @@ a:active { text-decoration: none; }
   transition: 0.75s;
 }
 
+.button-4 {
+  background-color: #fff;
+}
+
 .button-2:hover {
   background-color: #a0c274;
 }
@@ -125,6 +129,10 @@ a:active { text-decoration: none; }
 
 .form-row .button:hover {
   background-color: #ffdfcd;
+}
+
+.team .button {
+  margin-top: 40px;
 }
 
 

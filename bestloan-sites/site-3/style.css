@@ -146,6 +146,7 @@ a:active { text-decoration: none; }
   transition: 0.75s;
 }
 
+
 .button-2:hover {
   background-color: #538ed1;
 }
