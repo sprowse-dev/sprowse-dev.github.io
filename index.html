@@ -22,11 +22,50 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
       
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
       
+      
+      
+    <!--Page Load Animations-->
+   
+    <!--Callback functions like this to make fadeIn only happen after the slideDown-->
+    <script>
+    $(document).ready(function(){
+      $("header").slideDown(700, function(){
+          $(".email-button").fadeIn(1000);
+          $(".resume-button").fadeIn(1000); 
+      });
+    });
+    </script>
+    
+      
+    <!--Click Resume button animation-->
+    <script>
+    $(document).ready(function(){
+       $(".resume-button").click(function(){
+           $(".resume-section").slideToggle("slow");
+       }); 
+    });
+    </script>
+      
+    <!--Click Email button animation-->
+    <script>
+    $(document).ready(function(){
+       $(".email-button").click(function(){
+           $(".email-section").slideToggle("slow");
+       }); 
+    });
+    </script>
       
 
+
+    
       
-    <!--Enables Bootstrap Tooltip popups-->
+      
+      
+      
+    <!--Enable Bootstrap Tooltip popups-->
     <script>
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()
@@ -37,7 +76,7 @@
     <script>
         function copyToClip() {
           /* Get the text field */
-          var copyText = document.getElementById("myInput");
+          var copyText = document.getElementById("emailAddress");
 
           /* Select the text field */
           copyText.select();
@@ -61,7 +100,7 @@
   <body>
       
     <div class="container-fluid pt-5 pb-5">
-        <header class="sticky-top">
+        <header class="sticky-top" style="display: none;">
             <div class="container text-center">
                 <img class="profile mb-4" src="img/samp.jpg" width="150" height="150" alt="Photo of Sam"/>
                 <h1 class="title">Sam Prowse</h1>
@@ -69,28 +108,26 @@
                 
                 
                 <!--Email/Resume Button Section-->
-                <button class="btn btn-primary pt-1 pb-2" data-toggle="collapse" href="#collapseEmail" role="button" aria-expanded="false" aria-controls="collapseEmail">      
+                <button class="btn btn-primary pt-1 pb-2 email-button" style="display: none;">      
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
                     </svg>
                 </button>
                 
                 
-                <button class="btn btn-outline-primary" data-toggle="collapse" href="#collapseResume" role="button" aria-expanded="false" aria-controls="collapseResume">Resume</button>
+                <button class="btn btn-outline-primary resume-button" style="display: none;">Resume</button>
             
                 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center email-section" style="display: none;">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="collapse mt-5" id="collapseEmail">
+                        <div class="mt-5">
                             <div class="card card-body">
                                 <!-- The text field -->
                                 
-                                <input type="text" value="sprowseart@gmail.com" id="myInput" class="email-address">
+                                <input type="text" value="sprowseart@gmail.com" id="emailAddress">
 
                                 <!-- The button used to copy the text -->
-                                <button type="button" onclick="copyToClip()" class="btn btn-primary button-copy">
-                                  Copy
-                                </button>
+                                <button type="button" onclick="copyToClip()" class="btn btn-primary button-copy">Copy</button>
                                 
                             </div>
                         </div>
@@ -103,9 +140,9 @@
                 <!--Resume Dropdown Section-->
                 
                 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center resume-section" style="display: none;">
                     <div class="col-12 col-md-9 col-lg-6">
-                        <div class="collapse mt-5 mb-5 border-top pt-5" id="collapseResume">
+                        <div class="mt-5 mb-5 border-top pt-5">
                             <h5 class="title text-primary">Education</h5>
                             <h6 class="subtitle">The College of New Jersey  
                             <span class="text-small font-weight-light">| 2009-2013</span></h6><p class="font-weight-light">BFA Digital Art, Minor Computer Science</p>
@@ -418,7 +455,7 @@
     <footer>
         <div class="container text-center pt-5 pb-3">
             <h5 class="title">Portfolio Site</h5>
-            <p class="text-muted mb-4">HTML, Bootstrap, CSS</p>
+            <p class="text-muted mb-4">HTML, CSS, Bootstrap, jQuery</p>
             <p class="text-muted text-small font-weight-lighter">&copy 2023 Sam Prowse</p>
         </div>
     </footer>

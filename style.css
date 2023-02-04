@@ -44,7 +44,7 @@ h3 {
   float: left;
 }
 
-.email-address {
+#emailAddress {
   border: none;
   text-align: center;
   color: #333;
@@ -62,7 +62,6 @@ header img.profile{
 .text-small{
     font-size:0.85rem;
 }
-
 
 /*--------------------------------------------------------------
 # Cards
