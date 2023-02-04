@@ -44,6 +44,14 @@ h3 {
   float: left;
 }
 
+.email-button, .resume-button {
+  transition: 1.5s;
+}
+
+.email-button:hover {
+  background-color: #0056a1;
+}
+
 #emailAddress {
   border: none;
   text-align: center;
