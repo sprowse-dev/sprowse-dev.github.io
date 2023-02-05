@@ -44,7 +44,7 @@ h3 {
   float: left;
 }
 
-.email-button, .resume-button {
+.button-hover {
   transition: 1.5s;
 }
 
