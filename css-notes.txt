@@ -1,0 +1,158 @@
+CSS 
+
+<!------------------PSEUDO ELEMENTS-------------------->
+
+::before and ::after tags are the most common. CSS3 added the two colons - it used to be one colon. But one colon is now for states. It needs the content declaration to show anything. This will show an arrow after the content in the element. Inputs or images can't have pseudo elements, because they don't have content. It's a self-closing tag. 
+
+.link::after{
+  content: '>';
+  display: block;
+  color: red;
+}
+
+This is useful for adding arrows or slashes between links, or adding stars to forms to show they're required, it's also good for creating tooltips. 
+
+https://www.youtube.com/watch?v=OtBpgtqrjyo
+
+
+
+
+
+<!------------------SELECTORS--------------------->
+
+Direct child selector - selects any b tag that is a direct child of a div. So if the b tag was also inside a span, inside the div, that wouldn't be selected. Useful if you don't want to select all the b tags within a div as you would with div b { }.
+
+div > b {
+
+}
+
+Sibling selector - Selects all sibling elements. For example, all li siblings within a ul. 
+
+li.red ~ li {} - This says to select every li that comes after an li with the class of red.
+
+li.red + li {} - This only selects the first li after the one with red class. 
+
+
+
+
+
+<!------------ELEMENT STATES/PSEUDO-CLASSES--------->
+
+Link/visisted/active/hover/focus
+
+input:focus {
+  background: red;
+}
+
+This would give the input a red background when you click into it. 
+
+You can also do:
+input:required {}
+
+and add styles for when you have an input with the required tag like this: 
+
+<input required type="text">
+
+input:disabled and input:checked for checkbox styles, although you can't change the background for checkbox.
+
+li:first-child {
+  background: red;
+}
+
+You can also select the first-child, last-child, only-child, or nth-child without that being a class. 
+
+li:nth-child(3) {}
+li:nth-child(2n) {} - Selects every other, 3n would be every 3rd, 2n -1 would offset the every other selection by one. 
+
+li:first-of-type, last-of-type, only-of-type, nth-of-type(x), would select first or last li on page. 
+
+span:not(.green){
+  background: red;
+}
+
+The most powerful - selects any span that's not of the green class, and styles it red. 
+
+
+<!------------------SCOPING--------------------->
+
+This is most important when you have multiple pages referencing the same CSS file. For instance you have an 'about me' page, you should wrap everything in that page in an .about-me class div so you can style differently for the different pages and not have naming conflicts between elements on different pages.
+
+If you have multiple people working on a site, this is also how you can separate the styles each person is applying.
+
+So there's global scope - everything in the application
+Page scope - everything on a page
+Element scope - things within elements
+
+https://www.youtube.com/watch?v=P3DJotF310A
+
+
+
+<!------------------VARIABLES--------------------->
+
+Variables work like any other property, except you get to define the property yourself. Declare them in root 
+By using: 
+
+:root {
+
+}
+
+Because these properties should be created at the highest level so they can be cascaded lower down. 
+
+So for example to set a background color for everything you would do: 
+
+:root {
+  --div-background-color: red;
+  --text-color: black;
+  --div-padding: 10px;
+}
+
+.child {
+  background-color: var(--div-background-color);
+  color: var(--text-color);
+}
+
+Everything with the child class will apply the css. 
+
+Then if you want to change it in a child of that child, you can declare a new class and override the background-color variable like this: 
+
+.new {
+   --div-background-color: blue; 
+}
+
+The main use case for variables is that you can use them in multiple places in your application, and just change it in one spot.
+
+For example if you want to apply consistent padding across your site/application:
+
+.padded-element{ 
+  padding: var(--div-padding);
+}
+
+.padded-element-2 {
+  padding: var(--div-padding);
+}
+
+Now 10px padding will be applied to anything with the padding variable, and changing it in one place, the root section of the CSS will change it for everything. Very useful. 
+
+You can also put in a fallback, for if the variable isn't declared. This could be good for troubleshooting if you used a bright red for example, or it's good for if you're declaring variables in javascript and want to have them appear a specific way until that's done. Set up like this: 
+
+body {
+  background-color: var(--background-color, pink);
+}
+
+CSS variables are arguably more powerful than SASS or something, because the variables can be used directly in javascript. Then your CSS can be changed dynamically based on javascript code. Video below walks through CSS variables and how to use them in javascript:
+
+https://www.youtube.com/watch?v=oZPR_78wCnY
+
+
+
+
+<!------------------IMPORTS--------------------->
+
+You can import other CSS files into your main CSS file. This can keep things more organized in multiple files, or it's useful if you're working with a whole system where there are global CSS files for multiple projects. 
+
+@import "otherfile.css";
+
+You can also override styles for whatever you import. Your main CSS file is king - has the highest priority. 
+
+It can slow the site down if you use a lot of them. 
+
