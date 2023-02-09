@@ -1,0 +1,467 @@
+/**
+* Template Name: Photographer Sample Portfolio
+* Author: Sam Prowse
+
+Index:
+  1. Global
+  2. Typography
+  3. Layout
+  4. Module
+  5. Component
+  6. Pages
+  7. Media Queries
+
+======================================== */
+
+/* 1. Global
+======================================== */
+
+:root {
+  --primary-color: #7AAC7F;
+  --secondary-color: #7AAC7F;
+  --bg-dark: #283229; 
+  --bg-med: #738074;
+  --bg-light: #F9F9F9;
+  --bg-black: #111311;
+  --sans-font: 'Open Sans', Helvetica, sans-serif;
+  --serif-font: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #9B9B9B;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/* 2. Typography Styles
+======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif-font);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  transition: font-size 0.25s ease;
+}
+
+h1 {
+  font-size: calc(100px / 1.5);
+  line-height: 0.85;
+}
+
+h2 {
+  font-size: calc(65px / 1.5);
+  margin-top: 10px;
+  line-height: 0.85;
+}
+
+@media(min-width: 720px) {
+  h1 {
+    font-size: calc(65px / 1.25);
+  }
+  h2 {
+    font-size: calc(65px / 1.25);
+  }
+}
+
+@media(min-width: 1024px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+}
+
+p {
+  font-family: var(--serif-font);
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 15px;
+}
+
+a {
+  font-family: var(--sans-font);
+  font-size: 16px;
+  color: #333333;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-family: var(--sans-font);
+  font-size: .9rem;
+  line-height: 23px;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+/* 3. Layout Styles
+======================================== */
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+/* 4. Modules Styles
+======================================== */
+
+/* Site Navigation */
+.site-navigation {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 30px 2em;
+}
+
+.site-header-left {
+  display: inline-block;
+}
+
+.site-header-left li {
+  line-height: 0;
+}
+
+.site-header-right {
+  display: inline-block;
+  float: right;
+}
+
+.site-header-right li,
+.footer-right li {
+  display: inline;
+}
+
+.site-header-right li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: var(--bg-light);
+}
+
+
+/* Site Footer */
+.footer {
+  background-color: var(--bg-black);
+  color: #999;
+  font-size: 1rem;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-navigation {
+  margin: 0 auto;
+  max-width: 1280px;
+  font-size: 2rem;
+}
+
+
+
+
+
+/* 5. Component Styles
+======================================== */
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.75s;
+}
+
+.button:after {
+  content: '»';
+  position: relative;
+  opacity: 0;  
+  right: -20px;
+  top: -2px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  padding-right: 24px;
+  padding-left:20px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: -10px;
+}
+
+.button-primary {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: transparent;
+  float: left;
+}
+
+
+
+
+
+
+
+input, textarea {
+  margin-bottom: 15px;
+  font-family: var(--sans-serif);
+  padding: 20px;
+  border: none;
+  box-shadow: none;
+  transition: border-color 0.5s ease;
+  background-color: var(--bg-black);
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+}
+
+
+
+
+/* 6. Page Styles
+======================================== */
+
+.hero {
+  background-color: var(--bg-dark);
+  min-height: 700px;
+}
+
+.hero-text {
+  padding: 0 20px;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  margin: 1em 0 40px;;
+}
+
+.hero h1 span {
+  color: #FFF;
+}
+
+.hero p {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.grid {
+  margin-top: -80px;
+}
+
+.image-box {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 40px);
+  margin: 20px;
+  max-height: 450px;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.blockquote {
+  background-color: var(--bg-med);
+  margin-top: -80px;
+  padding-bottom: 80px;
+}
+
+blockquote p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+blockquote:before {
+  content: '  ';
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  text-align: center;
+  font-size: 150px;
+  color: #FFFFFF;
+  line-height: 30px;
+  padding-top: 40px;
+}
+
+blockquote footer {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #F9F9F9;
+}
+
+.about, .contact {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.about h2 {
+  color: #888888;
+  margin-bottom: 30px;
+}
+
+.about p {
+  color: #888888;
+  padding: 0 10%;
+  text-align: left;
+}
+
+.about img {
+  float: right;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background-color: var(--bg-dark);
+}
+
+.contact h2 {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  color: #FFFFFF;
+  padding: 0 10%;
+  text-align: left;
+}
+
+.contact-form {
+  padding: 0 10%;
+}
+
+.contact-form input:nth-child(1), .contact-form input:nth-child(3), .contact-form input:nth-child(2), .contact-form input:nth-child(4) {
+  margin: 0 0 20px;
+}
+
+.contact-form input {
+    font-family: var(--sans-serif);
+}
+
+input:focus {
+  background-color: var(--primary-color);
+}
+
+/* 7. Media Queries
+======================================== */
+
+@media (min-width: 585px) {
+  .hero {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 720px) {
+   .about img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero {
+    min-height: 500px;
+  }
+  .image-box {
+    width: calc(33.3333% - 40px);
+  }
+  .about p, .contact p, .contact-form {
+    padding: 0 20%;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 700px;
+  }
+  .hero-text {
+    width: 70%;
+    display: block;
+  }
+  .contact-form input {
+    width: 48%;
+    display: inline-block;
+    float: left;
+  }
+  .contact-form input:nth-child(1), .contact-form input:nth-child(3) {
+    margin: 0 2% 20px 0;
+  }
+  .contact-form input:nth-child(2), .contact-form input:nth-child(4) {
+    margin: 0 0 20px 2%;
+  }
+}
