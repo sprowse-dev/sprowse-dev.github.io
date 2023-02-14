@@ -1,5 +1,69 @@
 CSS 
 
+https://fontawesome.com/icons
+
+<!------------------ANIMATION: TRANSITIONS-------------------------->
+
+To create a simple transition in CSS, we must specify two of the four aspects:
+
+1) The property that we want to transition. 2) The duration of the transition.
+
+a {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+What can be animated? Color, Background, font size, width, height, etc.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+ease - starts slow, accelerates, then ends slowly
+ease-in — starts slow, accelerates quickly, stops abruptly
+ease-out — begins abruptly, slows down, and ends slowly
+ease-in-out — starts slow, gets fast in the middle, and ends slowly
+linear — constant speed throughout
+
+transition-delay - delays the start of the animation.
+
+transition-property: color;
+transition-duration: 1.5s;
+transition-timing-function: linear;
+transition-delay: 0.5s;
+
+Can be rewritten as:
+transition: color 1.5s linear 0.5s;
+
+To transition multiple properties at a time:
+transition: color 1s linear,
+font-size 750ms ease-in 100ms;
+
+Or to transition them all with the same parameters: 
+transition: all 1.2s ease-out 0.2s;
+
+
+
+<!------------------ANIMATION: TRANSFORMS-------------------------->
+
+By modifying the coordinate space, CSS transforms change the shape and position of the affected content without disrupting the normal document flow. This guide provides an introduction to using transforms.
+
+CSS transforms are implemented using a set of CSS properties that let you apply affine linear transformations to HTML elements. These transformations include rotation, skewing, scaling, and translation both in the plane and in the 3D space.
+
+
+
+<!------------------ANIMATION: SCROLLING-------------------------->
+
+With a JavaScript one-liner, we can set a CSS custom property that knows the percentage of the page scrolled:
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
+
+Now we have --scroll as a value we can use in the CSS.
+
+https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
+
+
+
 <!------------------PSEUDO ELEMENTS-------------------->
 
 ::before and ::after tags are the most common. CSS3 added the two colons - it used to be one colon. But one colon is now for states. It needs the content declaration to show anything. This will show an arrow after the content in the element. Inputs or images can't have pseudo elements, because they don't have content. It's a self-closing tag. 

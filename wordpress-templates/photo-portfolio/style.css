@@ -17,8 +17,8 @@ Index:
 ======================================== */
 
 :root {
-  --primary-color: #7AAC7F;
-  --secondary-color: #7AAC7F;
+  --primary-color: #d2825b;
+  --secondary-color: #a6cecd;
   --bg-dark: #283229; 
   --bg-med: #738074;
   --bg-light: #F9F9F9;
@@ -37,6 +37,8 @@ html {
   width: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: var(sans-font);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -52,6 +54,19 @@ body {
   content: " ";
   clear: both;
   display: table;
+}
+
+/**********REVEAL**********/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 
@@ -98,7 +113,7 @@ h2 {
 }
 
 p {
-  font-family: var(--serif-font);
+  font-family: var(--sans-font);
   font-size: 16px;
   line-height: 23px;
   margin: 0 0 15px;
@@ -129,6 +144,8 @@ img {
 
 
 
+
+
 /* 3. Layout Styles
 ======================================== */
 
@@ -153,7 +170,12 @@ img {
 .site-navigation {
   margin: 0 auto;
   max-width: 1280px;
-  padding: 30px 2em;
+  padding: 10px 2em;
+}
+
+header {
+  background-color: var(--bg-dark);
+  width: 100%;
 }
 
 .site-header-left {
@@ -167,6 +189,7 @@ img {
 .site-header-right {
   display: inline-block;
   float: right;
+  margin-top:5px;
 }
 
 .site-header-right li,
@@ -176,18 +199,29 @@ img {
 
 .site-header-right li a {
   text-decoration: none;
-  margin-left: 20px;
   color: var(--bg-light);
+  padding: 4px 10px 4px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.site-header-right li a:hover {
+  background-color: #374638;  
+} 
+
+#hamburger {
+  color: #fff;
+  display: none;
 }
 
 
 /* Site Footer */
 .footer {
   background-color: var(--bg-black);
-  color: #999;
-  font-size: 1rem;
-  padding: 30px;
-  text-align: center;
+  color: #777;
+  font-size: .8rem;
+  padding: 20px 30px 20px 30px;
+  text-align: left;
 }
 
 .footer-navigation {
@@ -221,7 +255,11 @@ button:hover {
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-  transition: 0.75s;
+  transition: 0.5s;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: transparent;
+  float: left;
 }
 
 .button:after {
@@ -244,13 +282,9 @@ button:hover {
   right: -10px;
 }
 
-.button-primary {
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  background-color: transparent;
-  float: left;
+.button:active{
+  background-color: #743C20;
 }
-
 
 
 
@@ -265,8 +299,8 @@ input, textarea {
   box-shadow: none;
   transition: border-color 0.5s ease;
   background-color: var(--bg-black);
-  color: #FFFFFF;
   font-size: 16px;
+  color: #fff;
 }
 
 input {
@@ -276,6 +310,7 @@ input {
 
 textarea {
   width: 100%;
+  height: 200px;
 }
 
 
@@ -294,8 +329,8 @@ textarea {
 }
 
 .hero h1 {
-  color: var(--primary-color);
-  margin: 1em 0 40px;;
+  color: var(--secondary-color);
+  margin: 1em 0 40px;
 }
 
 .hero h1 span {
@@ -332,6 +367,7 @@ textarea {
   background-color: var(--bg-med);
   margin-top: -80px;
   padding-bottom: 80px;
+  z-index: 1;
 }
 
 blockquote p {
@@ -368,8 +404,8 @@ blockquote footer {
 }
 
 .about h2 {
-  color: #888888;
-  margin-bottom: 30px;
+  color: var(--bg-dark);
+  margin-bottom: 40px;
 }
 
 .about p {
@@ -390,7 +426,7 @@ blockquote footer {
 }
 
 .contact h2 {
-  color: #FFFFFF;
+  color: var(--secondary-color);
   margin-bottom: 30px;
 }
 
@@ -404,20 +440,45 @@ blockquote footer {
   padding: 0 10%;
 }
 
+.contact-form input, textarea {
+   font-family: var(--sans-font); 
+}
+
 .contact-form input:nth-child(1), .contact-form input:nth-child(3), .contact-form input:nth-child(2), .contact-form input:nth-child(4) {
   margin: 0 0 20px;
 }
 
-.contact-form input {
-    font-family: var(--sans-serif);
-}
-
-input:focus {
-  background-color: var(--primary-color);
+input:focus, textarea:focus {
+  background-color: #2D3232;
+  color: #fff;
 }
 
 /* 7. Media Queries
 ======================================== */
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .site-header-right {
+      top: -300px;
+    }
+    .site-header-right li {
+      display: block;
+    }
+    #hamburger {
+      display: initial;
+      cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 585px) {
   .hero {

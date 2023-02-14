@@ -25,8 +25,16 @@
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     
+    <!--JS for Page-scroll-->
+    <script>
+        window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    </script>
+      
     <!--Custom Scripts-->
     <script src="functions.js" type="text/javascript"></script>
+    
       
       
     <title>Sam Prowse</title>
@@ -168,7 +176,7 @@
     </div>
 
       
-    <main class="container-fluid bg-light pt-5">
+    <main class="container-fluid pt-5 project-section">
         
         <div class="container">
             

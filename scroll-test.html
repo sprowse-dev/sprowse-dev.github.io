@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scroll Test</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,900" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel='stylesheet' type='text/css' href='scroll-test.css'>
+    
+  <!--Scrolling JS-->
+  <script>
+    
+      function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+      
+  </script>
+
+    
+</head>
+    
+<body>
+
+<section>
+  <h1>Scroll Down to Reveal Elements &#8595;</h1>
+</section>
+<section>
+  <div class="container reveal">
+    <h2>Caption</h2>
+    <div class="text-container">
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container reveal">
+    <h2>Caption</h2>
+    <div class="text-container">
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container reveal">
+    <h2>Caption</h2>
+    <div class="text-container">
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Section Text</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          eius molestiae perferendis eos provident vitae iste.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+    
+</body>
+</html>

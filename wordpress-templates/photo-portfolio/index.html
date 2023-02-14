@@ -13,7 +13,35 @@
 
   <!-- CSS -->
   <link rel='stylesheet' type='text/css' href='style.css'>
+    
+  <!--Scrolling JS-->
+  <script>
+    
+      function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+      
+  </script>
+    
+    
 </head>
+    
+    
+    
 <body>
   <!-- Site Header -->
   <section role="region" id="top" class="hero">
@@ -25,7 +53,10 @@
             <img src="img/logo.png" width="100" alt="camera logo" />
           </li>
         </ul>
-        <ul class="site-header-right">
+        <ul class="site-header-right nav">
+          <li>
+            <a href="#about">Work</a>
+          </li>
           <li>
             <a href="#about">About</a>
           </li>
@@ -33,13 +64,20 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div id="hamburger">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20" rx="8"></rect>
+                <rect y="30" width="100" height="20" rx="8"></rect>
+                <rect y="60" width="100" height="20" rx="8"></rect>
+            </svg>
+        </div>
       </nav>
     </header>
     <div class="container">
       <div class="hero-text">
         <h1>Capturing Your <span>Memories</span></h1>
-        <p>I'm an avid photographer who loves to help you create beautiful memories.</p>
-        <a href="#" class="button button-primary">View My Work</a>
+        <p>I'm an avid photographer who would love to help you create beautiful memories.</p>
+        <a href="#" class="button">View My Work</a>
       </div>
     </div>
   </section>
@@ -48,32 +86,32 @@
     <!-- PHOTO GRID -->
     <section role="region" aria-label="grid" class="grid">
       <div class="container">
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-1.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-1.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-2.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-2.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-3.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-3.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-4.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-4.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-5.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-5.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-6.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-6.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-7.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-7.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-8.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-8.jpg" />
         </div>
-        <div class="image-box">
-          <img src="https://content.codecademy.com/programs/ui-design/journey_around_the_world/image-box-9.jpg" />
+        <div class="image-box reveal">
+          <img src="img/img-9.jpg" />
         </div>
       </div>
     </section>
@@ -81,7 +119,7 @@
     <!-- BLOCKQUOTE -->
     <section role="region" class="blockquote">
       <div class="container">
-        <blockquote>
+        <blockquote class="reveal">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <footer>&mdash; First Last</footer>
         </blockquote>
@@ -89,7 +127,7 @@
     </section>
 
     <!-- ABOUT ME -->
-    <section role="region" id="about" class="about">
+    <section role="region" id="about" class="about reveal">
       <div class="container">
         <h2>About Me</h2>
         
@@ -97,14 +135,13 @@
             <img src="img/about.jpg" width="400"/>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et turpis in ex pellentesque tempus a et risus. Ut at mollis ipsum, sit amet imperdiet libero. Phasellus viverra neque sit amet sem maximus, a egestas mi convallis. Mauris felis elit, iaculis non magna nec, placerat ullamcorper nunc. Etiam rutrum urna erat, eget vehicula nibh finibus laoreet. Fusce accumsan ligula et arcu faucibus, eu aliquam justo congue. Nullam at nisi nec arcu posuere tristique eget id orci. Vestibulum tincidunt et neque sit amet lacinia.</p>
         <p>Nunc eget arcu quis mauris dapibus commodo. Maecenas nec eros sed leo aliquam gravida eget vel nisl. Phasellus justo dolor, eleifend a velit eu, pretium ultricies mi. Curabitur ut ornare lorem. Pellentesque nec dui ultricies, sodales orci vitae, placerat purus. Sed at odio ipsum. Duis vitae velit at lorem varius iaculis eget at diam. Nulla non pharetra nibh.</p>
-        <p>Sed vitae tincidunt nulla. Vestibulum malesuada augue a est molestie auctor eget ac velit. Cras quam justo, semper ac orci non, ornare commodo odio. Vestibulum odio dolor, sollicitudin et lorem nec, dictum vulputate neque. In vel ipsum iaculis felis dapibus gravida. Morbi condimentum, ligula ac egestas fermentum, mauris neque auctor diam, eu semper ante dolor nec metus. Nam eget tincidunt leo. Duis blandit varius massa ut ultricies. Aenean est neque, elementum ut pulvinar sit amet, accumsan sit amet lacus. Suspendisse sed suscipit turpis. Etiam vestibulum sem sit amet sollicitudin pulvinar. Mauris libero lorem, fringilla et tortor quis, gravida aliquam lectus. Nunc aliquet sodales mauris quis eleifend. Integer aliquam est in quam pellentesque tristique. Aenean lobortis pharetra est sit amet luctus.	</p>
+        <p>Sed vitae tincidunt nulla. Vestibulum malesuada augue a est molestie auctor eget ac velit. Cras quam justo, semper ac orci non, ornare commodo odio. Vestibulum odio dolor, sollicitudin et lorem nec, dictum vulputate neque. In vel ipsum iaculis felis dapibus gravida. Morbi condimentum, ligula ac egestas fermentum, mauris neque auctor diam, eu semper ante dolor nec metus. Nam eget tincidunt leo. Duis blandit varius massa ut ultricies. Aenean est neque, elementum ut pulvinar sit amet, accumsan sit amet lacus. Suspendisse sed suscipit turpis. Etiam vestibulum sem sit amet sollicitudin pulvinar. Mauris libero lorem, fringilla et tortor quis, gravida aliquam lectus. Nunc aliquet sodales mauris quis eleifend. Integer aliquam est in quam pellentesque tristique. Aenean lobortis pharetra est sit amet luctus.</p>
       </div>
         
-      <a href="#top" class="button button-secondary">Back to Top</a>
     </section>
 
     <!-- CONTACT ME -->
-    <section role="region" id="contact" class="contact">
+    <section role="region" id="contact" class="contact reveal">
       <div class="container">
         <h2>Contact Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -114,10 +151,9 @@
           <input type="phone" placeholder="Phone Number">
           <input type="text" placeholder="Requested Date">
           <textarea placeholder="Message"></textarea>
-          <button type="submit" class="button button-primary">Send Request</button>
+          <button type="submit" class="button">Send Request</button>
         </form>
       </div>
-      <a href="#top" class="button button-secondary">Back to Top</a>
     </section>
   </main>
 

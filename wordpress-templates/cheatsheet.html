@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--My CSS-->
+    <link rel="stylesheet" href="cheat-style.css" type="text/css">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!--JS for Page-scroll-->
+    <script>
+        window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    </script>
+    
+</head>
+<body>
+
+<div class="progress"></div>
+
+<div class="cube-wrap">
+  <div class="cube">
+    <div class="side top"></div>
+    <div class="side bottom"></div>
+    <div class="side front"></div>
+    <div class="side back"></div>
+    <div class="side left"></div>
+    <div class="side right"></div>
+  </div>
+</div>
+    
+<div class="grid">
+    
+    <div class="box">
+    
+        <button type="submit" class="button button-primary">Send Request</button>
+    
+    </div>
+
+    <div class="box">           
+        <div class="form-section">
+
+            <div class="form-fields">
+
+                <form action="/action_page.php">
+
+                    <input type="text" class="email-field" name="email" placeholder="Your email">
+
+                     <input type="submit" value="Subscribe" class="button-2 sub-button">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="box">
+        <a href="#footer"><div class="button-3">Contact Us</div></a>
+    </div>
+    
+</div>
+                    
+        </body>
+    </html>

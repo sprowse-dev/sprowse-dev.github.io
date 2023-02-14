@@ -1,0 +1,257 @@
+:root {
+  --primary-color: #7AAC7F;
+  --secondary-color: #7AAC7F;
+  --bg-dark: #283229; 
+  --bg-med: #738074;
+  --bg-light: #F9F9F9;
+  --bg-black: #111311;
+}
+
+body {
+  padding: 30px;
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  min-height: 500vh;
+  background-color: rgb(139, 201, 228);
+  animation: body 1s linear;
+}
+@keyframes body {
+  to {
+    background-color: rgb(19, 48, 97);
+  }
+}
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background-color: rgb(20, 255, 226);
+    width: 100%;
+  }
+}
+
+.cube-wrap {
+  --size: 30vmin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  perspective: 100vmin;
+}
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+  animation: cube 1s linear;
+}
+@keyframes cube {
+  to {
+    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  }
+}
+
+.side {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background-color: #eee;
+  backface-visibility: visible;
+  top: calc(var(--size) * -.5);
+  left: calc(var(--size) * -.5);
+}
+.top {
+  background-color: #fff;
+  transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+}
+.bottom {
+  background-color: #999;
+  transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+}
+.left {
+  background-color: #ccc;
+  transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+}
+.right {
+  background-color: #ddd;
+  transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+}
+.front {
+  background-color: #aaa;
+  transform: translateZ(calc(var(--size) * .5));
+}
+.back {
+  background-color: #bbb;
+  transform: translateZ(calc(var(--size) * -.5));
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+
+
+
+
+/*************Button 1************/
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.75s;
+}
+
+.button:after {
+  content: '»';
+  position: relative;
+  opacity: 0;  
+  right: -20px;
+  top: -2px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  padding-right: 24px;
+  padding-left:20px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: -10px;
+}
+
+.button-primary {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: transparent;
+  float: left;
+}
+
+
+/*************Subscribe Button************/
+
+.button-2 {
+  width: 90px;
+  padding: 8px;
+  font-size: .75em;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: 0.75s;
+}
+
+.email-field {
+  padding: 8px;
+  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+input[type=text], select {
+  margin: 10px 0px 0px 0px; 
+  padding: 10px 20px;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #30366d;
+  filter: drop-shadow(0px 0px 2px #999);
+}
+
+select {
+  -webkit-appearance: none;
+  height:50px;
+  background:transparent;
+  background: url("img/arrow-5.png") no-repeat #FFF;
+  background-position: right;
+  border:0;
+  border-bottom: 1px solid #30366d;
+  border-radius:0px;
+  color: #999;
+}
+
+input[type=submit] {
+  margin: 10px 0px 0px 0px; 
+  border: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background-color: #4CAF50;
+  border-radius: 0px 10px 10px 0px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* Button 3 */
+
+a{
+  text-decoration: none;
+}
+
+
+.button-3 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  padding:1em 1.25em 1em 1.25em;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: .8em;
+  border-radius: 12px;
+  font-weight: bold;
+  background-color: #d5e1c4;
+  color: #84aa53;
+  transition: 0.75s;
+}
+
+.button-3:hover {
+  background-color: #C5D4B1; 
+  color: #688e38;
+}
+
+
+
+
+
+
+
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
