@@ -50,7 +50,6 @@ h5 {
   font-family: var(--small-font);  
   font-size: 1.4rem;
   font-weight: 200;
-  margin-top: 10px;
 }
 
 p {
@@ -66,7 +65,7 @@ a {
 
 h1 a {
   text-decoration: none;
-  color: var(--bg-blue-dk);
+  color: #000;
 }
 
 section {
@@ -219,13 +218,13 @@ section {
 }
 
 .book img:first-of-type {
-  width: 370px;
+  width: 49%;
   margin: 30px 10px 30px 0px;
   float: left;
 }
 
 .book img:last-of-type {
-  width: 370px;
+  width: 49%;
   margin: 30px 0px 30px 10px;
 }
 
@@ -244,21 +243,34 @@ header h1 {
 }
 
 nav {
-  max-width: 70%;
-  margin: auto;
+  margin-top: 30px;
 }
 
 nav ul {
+  
   list-style:none;
 }
 
 nav ul li {
   float: left;
-  padding: 20px;
 }
 
 nav li a {
   color: var(--bg-gray-lt);
+  font-family: var(--big-font);
+  font-size: 2rem;
+}
+
+nav li a:hover {
+  color: #fff;
+}
+
+nav ul li:first-of-type{
+  padding-right: 20px;
+}
+
+nav ul li:last-of-type{
+  padding-left: 20px;
 }
 
 
@@ -284,6 +296,10 @@ nav li a {
   align-items: center;
 }
 
+.row-1-right{
+  text-align: left;
+  padding-left: 40px;
+}
 .row-2-left {
   text-align: left;
 }
@@ -349,7 +365,7 @@ nav li a {
 
 .card.big {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   background-color: var(--bg-gray-lt);
   padding: 4px;
@@ -453,6 +469,12 @@ footer p {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       gap: 20px;
     }
+    .book img:first-of-type{
+      width: 40%;
+    }
+    .book img:last-of-type{
+      width: 40%;
+    }
     
 }
 
@@ -470,6 +492,26 @@ footer p {
     .big-card-text {
       float: left;
       padding: 20px;
+    }
+    .book img:first-of-type{
+      width: 47%;
+    }
+    .book img:last-of-type{
+      width: 47%;
+    }
+    
+    .row-1-right {
+      text-align: center;
+      padding: 0;
+    }
+    
+    nav ul li{
+      float: clear;
+      
+    }
+    
+    nav {
+        text-align: center;
     }
 }
 

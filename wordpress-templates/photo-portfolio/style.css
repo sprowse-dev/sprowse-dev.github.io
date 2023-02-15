@@ -171,7 +171,7 @@ img {
 .site-navigation {
   margin: 0 auto;
   max-width: 1280px;
-  padding: 10px 2em;
+  padding: 20px 2em ;
 }
 
 header {
@@ -285,6 +285,7 @@ button:hover {
 
 .button:active{
   background-color: #743C20;
+  transition: 0s;
 }
 
 
