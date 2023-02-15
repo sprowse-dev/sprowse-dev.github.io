@@ -3,15 +3,6 @@
 * Author: Sam Prowse
 **************************/
 
-:root * {
-  /* Pause the animation */
-  animation-play-state: paused;
-  /* Bind the animation to scroll */
-  animation-delay: calc(var(--scroll) * -1s);
-  /* These last 2 properites clean up overshoot weirdness */
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
 
 /*--------------------------------------------------------------
 # General
@@ -86,13 +77,6 @@ header img.profile{
 --------------------------------------------------------------*/
 .project-section {
   background-color: #f8f9fa;
-  animation: project-section 1s linear;
-}
-
-@keyframes project-section {
-  to {
-    background-color: #96A0A2;
-  }
 }
 
 .card{
