@@ -612,6 +612,19 @@ input[type=submit]:hover {
 
 @media (max-width: 700px) { 
     
+    .banner {
+      height: 600px;
+    }
+    
+    .team img {
+      width: 90%;
+      margin: auto;
+    }
+    
+    .banner .row {
+      padding-top: 100px;
+    }
+    
     .about {
       padding-bottom: 60px;
     }
@@ -622,6 +635,7 @@ input[type=submit]:hover {
     }
     
     .about img {
+      width: 100%;
       text-align: center;
     }
     
@@ -635,6 +649,23 @@ input[type=submit]:hover {
     
     .blog .col {
         text-align: center;
+    }
+    
+    .testimonials .row{
+      width: 90%;
+      margin: auto;
+    }
+    
+    .button-2 {
+      margin: auto;
+    }
+    
+    .sub-button {
+      width: 100px;
+    }
+    
+    .email-field {
+      width: 180px;
     }
 
 }
