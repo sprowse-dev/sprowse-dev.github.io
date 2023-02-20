@@ -245,6 +245,14 @@ select {
 
 @media (max-width: 700px) { 
     
+    #banner {
+      display: none;
+    }
+    
+    .header img {
+      width: 100%;
+    }
+    
     .nav-bottom {
       text-align: left;  
     }
