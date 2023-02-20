@@ -472,6 +472,9 @@ input:focus, textarea:focus {
       display: initial;
       cursor: pointer;
     }
+    .nav {
+      display: none;
+    }
 }
 
 
@@ -480,7 +483,11 @@ input:focus, textarea:focus {
 
 
 
-
+@media (max-width: 600px) {
+    .mob-hide {
+      display: none;
+    }
+}
 
 
 @media (min-width: 585px) {

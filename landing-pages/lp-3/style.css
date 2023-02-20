@@ -15,6 +15,10 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  color: #c23b4b;
+}
+
 ul {
   text-align: right;
 }

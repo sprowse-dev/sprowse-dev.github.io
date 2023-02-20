@@ -347,6 +347,7 @@ nav ul li:last-of-type{
 
 .recipes {
   background-color: var(--bg-blue-dk);
+  padding: 30px;
 }
 
 .recipes h2 {
@@ -417,6 +418,7 @@ nav ul li:last-of-type{
 
 .about {
   background-color: var(--bg-gray-lt);
+  padding: 30px;
 }
 
 
@@ -425,6 +427,7 @@ nav ul li:last-of-type{
 
 .book {
   background-color: var(--bg-blue-lt);
+  padding: 30px;
 }
 
 footer {
@@ -469,9 +472,11 @@ footer p {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       gap: 20px;
     }
+    
     .book img:first-of-type{
       width: 40%;
     }
+    
     .book img:last-of-type{
       width: 40%;
     }
@@ -485,10 +490,20 @@ footer p {
       text-align: center;
     }
     
+    .hero-box {
+      display: grid;
+      margin: auto;
+      max-width: 70%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 20px;
+      align-items: center;
+    }
+    
     .card.big {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      height: 400px;
+      grid-template-rows: 2fr 1fr;
     }
     
     .card.big img {
@@ -500,10 +515,10 @@ footer p {
       padding: 20px;
     }
     .book img:first-of-type{
-      width: 47%;
+      width: 46%;
     }
     .book img:last-of-type{
-      width: 47%;
+      width: 46%;
     }
     
     .row-1-right {
@@ -521,18 +536,27 @@ footer p {
     }
     
     .about img {
-      width: 355px;
+      width: 300px;
       margin: auto;
       margin-bottom: 0;
     }
     
-    .about-text, .book-text {
-      width: 80%;
-      margin: auto;
+    .about, .book {
+      padding-bottom: 60px;
+    }
+    
+    .book h2 {
+      padding-bottom: 0px;
     }
 }
 
+@media only screen and (max-width: 500px) {
 
+    .card.big {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+}
 
 
 

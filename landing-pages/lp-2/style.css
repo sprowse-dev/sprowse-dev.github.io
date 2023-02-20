@@ -15,6 +15,10 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  color: #ec6838;
+}
+
 
 ul {
   text-align: right;
