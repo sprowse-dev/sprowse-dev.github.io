@@ -418,6 +418,23 @@ button-4:hover:after {
   margin-bottom: 60px;
 }
 
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+
+.blog-page .col {
+  margin: 35px 0px 35px 0px;
+}
+
+.blog-page img {
+  width: 270px;
+  margin-bottom: 20px;
+} 
+
+.blog-page .row {
+  text-align: left;
+}
+
 
 
 
@@ -743,6 +760,10 @@ input[type=submit]:hover {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
+    }
+    
+    .blog-page {
+      width: 100%;
     }
     
     .blog .row img {
