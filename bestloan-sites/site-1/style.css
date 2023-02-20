@@ -437,7 +437,22 @@ input[type=submit]:hover {
     }
     
     .blog .col {
-        text-align: center;
+      text-align: center;
+    }
+    
+    .blog .article-image {
+      float: none;
+      display: block;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    
+    .blog p {
+      text-align: left;
+    }
+    
+    .button-2 {
+      margin: auto;
     }
 
 }
