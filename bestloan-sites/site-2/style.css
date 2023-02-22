@@ -1,12 +1,31 @@
-/**********************************************
-* Template Name: BestLoan Site 2 - Black Sample
+/**
+* Template Name: BestLoan Sample Template 2
 * Author: Sam Prowse, Tabrasa
-**********************************************/
 
+Index:
+  1. Global
+  2. Typography
+  3. Layout
+  4. Components
+  5. Navigation Section
+  6. Banner Section
+  7. Ribbon
+  8. Sections General
+  9. About Section
+  10. Team Section
+  11. Testimonials Section
+  12. Blog Section
+  13. Products Section
+  14. Footer
+  15. Media Queries
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+======================================== */
+
+/* 1. Global
+======================================== */
+
+@import url("page-styles.css");
+
 :root {
   --primary-color: #dc6f45;
 }
@@ -17,6 +36,10 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
+
+
+/* 2. Typography
+======================================== */
 
 h1 {
   font-size: 3em;
@@ -67,6 +90,10 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 
+
+/* 3. Layout
+======================================== */
+
 .container {
   margin: 0 auto;
 }
@@ -81,12 +108,8 @@ a:active { text-decoration: none; }
 
 
 
-
-
-
-/*--------------------------------------------------------------
-# Buttons
---------------------------------------------------------------*/
+/* 4. Components
+======================================== */
 
 .button {
   padding:1em 1.25em 1em 1.25em;
@@ -186,11 +209,6 @@ a:active { text-decoration: none; }
   right: -10px;
 }
 
-
-
-
-
-
 button-4 {
   border-radius: 4px;
   background-color: #5ca1e1;
@@ -232,13 +250,6 @@ button-4:hover:after {
   right: 10px;
 }
 
-
-
-
-
-
-
-
 .button-2:hover {
   background-color: #f28a62;
 }
@@ -260,9 +271,8 @@ button-4:hover:after {
 
 
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* 5. Navigation Section
+======================================== */
 
 .header {
   width: 90%;
@@ -301,9 +311,10 @@ button-4:hover:after {
   margin: 0 0;
 }
 
-/*--------------------------------------------------------------
-# Banner
---------------------------------------------------------------*/
+
+
+/* 6. Banner Section
+======================================== */
 
 .banner {
   position: relative;
@@ -353,9 +364,10 @@ button-4:hover:after {
 }
 
 
-/*--------------------------------------------------------------
-# Ribbon
---------------------------------------------------------------*/
+
+
+/* 7. Ribbon
+======================================== */
 
 .ribbon {
   background-image: linear-gradient(to right, #dd4f2c , #f3a057);
@@ -370,9 +382,9 @@ button-4:hover:after {
 }
 
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
+
+/* 8. Sections General
+======================================== */
 
 .about, .team, .testimonials, .blog {
   padding: 60px 20px 100px 20px;
@@ -386,64 +398,8 @@ button-4:hover:after {
 }
 
 
-/*--------------------------------------------------------------
-# Blog Page
---------------------------------------------------------------*/
-
-.blog-page {
-  max-width: 80%;
-  margin: auto;
-  padding: 60px 0px 100px 0px; 
-}
-
-.blog-page .row {
-  width: 90%;
-  margin: auto;
-}
-
-.blog-page h2 {
-  margin-bottom: 60px;
-}
-
-.blog-page img {
-  margin-bottom: 20px;
-}
-
-.blog-page .button-2{
-  margin-bottom: 30px;
-}
-
-.blog-page h2 {
-  margin-bottom: 60px;
-}
-
-.article h2 {
-  margin-bottom: 60px;
-}
-
-/*--------------------------------------------------------------
-# Blog Section
---------------------------------------------------------------*/
-
-.blog-page .col {
-  margin: 35px 0px 35px 0px;
-}
-
-.blog-page img {
-  width: 270px;
-  margin-bottom: 20px;
-} 
-
-.blog-page .row {
-  text-align: left;
-}
-
-
-
-
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+/* 9. About Section
+======================================== */
 
 .about .row {
   width: 85%;
@@ -459,9 +415,8 @@ button-4:hover:after {
 
 
 
-/*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
+/* 10. Team Section
+======================================== */
 
 .team {
     text-align: center;
@@ -486,48 +441,11 @@ button-4:hover:after {
   margin-bottom: 60px;
 }
 
-.team-page h2 {
-  margin-bottom: 60px;
-}
-
-.team-page p {
-  margin-bottom: 10px;
-}
-
-.team-page h3 {
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.team-page .row {
-  margin-bottom: 40px;
-}
-
-.team-profile img {
-  float: left;
-  margin-right: 20px;
-}
-
-.team-profile {
-  text-align: left;
-}
-
-.team-profile h2 {
-  text-align: left;
-}
-
-.team-profile .p {
-  float: left;
-}
-
-.team-profile .button-2 {
-  float: left;
-}
 
 
-/*--------------------------------------------------------------
-# Testimonial Section
---------------------------------------------------------------*/
+
+/* 11. Testimonials Section
+======================================== */
 
 .testimonials .col{
   margin: 20px;
@@ -553,9 +471,10 @@ button-4:hover:after {
 }
 
 
-/*--------------------------------------------------------------
-# Blog Section
---------------------------------------------------------------*/
+
+
+/* 12. Blog Section
+======================================== */
 
 .blog {
   width: 100%;
@@ -581,31 +500,10 @@ button-4:hover:after {
 
 
 
-/*--------------------------------------------------------------
-# Article Section
---------------------------------------------------------------*/
 
 
-.article {
-  max-width: 80%;
-  margin: auto;
-  padding: 60px 0px 100px 0px;
-}
-
-.article h2{
-    margin-bottom: 30px;
-}
-
-.article-image {
-    float: right;
-    margin-left: 20px;
-}
-
-
-
-/*--------------------------------------------------------------
-# Products Section
---------------------------------------------------------------*/
+/* 13. Products Section
+======================================== */
 
 
 .products-page {
@@ -621,32 +519,8 @@ button-4:hover:after {
 
 
 
-
-/*--------------------------------------------------------------
-# About Page 
---------------------------------------------------------------*/
-
-
-.about-page {
-  max-width: 80%;
-  margin: auto;
-  padding: 60px 0px 100px 0px;
-}
-
-.about-page h2{
-    margin-bottom: 30px;
-}
-
-.about-image {
-    float: right;
-    margin-left: 20px;
-}
-
-
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* 14. Footer
+======================================== */
 
 .footer {
   padding: 50px 30px;
@@ -731,12 +605,6 @@ input[type=submit]:hover {
   background-color: #f28a62;
 }
 
-
-
-/*--------------------------------------------------------------
-# Copyright
---------------------------------------------------------------*/
-
 .copyright {
   padding: 20px 30px 20px 30px;
   font-size: 12px;
@@ -759,9 +627,8 @@ input[type=submit]:hover {
 
 
 
-/*--------------------------------------------------------------
-# Media Queries
---------------------------------------------------------------*/
+/* 15. Media Queries
+======================================== */
 
 @media (max-width: 700px) { 
     

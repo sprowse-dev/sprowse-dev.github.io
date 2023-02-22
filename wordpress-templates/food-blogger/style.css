@@ -1,3 +1,25 @@
+/**
+* Template Name: Food Blogger Template
+* Author: Sam Prowse
+
+Index:
+  1. Global
+  2. Typography
+  3. Animations
+  4. Components
+  5. Navigaiton Section
+  6. Hero Section
+  7. Recipes Section
+  8. About Section
+  9. Book Section
+  10. Media Queries
+
+======================================== */
+
+/* 1. Global
+======================================== */
+
+
 :root {
   --big-font: 'Roboto Condensed', Sans-Serif;
   --small-font: 'Cabin', Sans-Serif;
@@ -21,6 +43,10 @@ html {
   font-family: var(--small-font);
   font-size: 14px;
 }
+
+
+/* 2. Typography
+======================================== */
 
 h1, h2, h3, h4 {
   font-family: var(--big-font);
@@ -73,21 +99,13 @@ section {
   text-align: center;
 }
 
-.about h2 {
-  color: var(--bg-gray-dk);
-}
-
-.about-img {
-  width: 500px;
-  margin: auto;
-  margin-bottom: 30px;
-}
 
 
 
 
 
-/**********ANIMATIONS**********/
+/* 3. Animations
+======================================== */
 
 
 .slideRight {
@@ -155,7 +173,8 @@ section {
 }
 
 
-/* BUTTONS */
+/* 4. Component Styles
+======================================== */
 
 .button {
   padding:1em 1.25em 1em 1.25em;
@@ -229,7 +248,9 @@ section {
 }
 
 
-/* HEADER */
+/* 5. Navigation Section
+======================================== */
+
 header {
   background-color: var(--bg-yellow);
   height: 40px;
@@ -275,7 +296,8 @@ nav ul li:last-of-type{
 
 
 
-/* HERO */
+/* 6. Hero Section
+======================================= */
 
 
 .hero {
@@ -327,15 +349,14 @@ nav ul li:last-of-type{
 
 
 
-/*************** SECTIONS **************/
+/* 7. Recipes Section
+======================================== */
 
 .big-list-box, .small-list-box, .about-box, .book-box, .footer-box {
   width: 70%;
   margin: auto;
   text-align: left;
 }
-
-/* RECIPES */
 
 .card{
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
@@ -414,16 +435,28 @@ nav ul li:last-of-type{
 }
 
 
-/* ABOUT */
+
+/* 8. About Section
+======================================== */
 
 .about {
   background-color: var(--bg-gray-lt);
   padding: 30px;
 }
 
+.about h2 {
+  color: var(--bg-gray-dk);
+}
+
+.about-img {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 30px;
+}
 
 
-/* BOOK */
+/* 9. Book Section
+======================================== */
 
 .book {
   background-color: var(--bg-blue-lt);
@@ -442,7 +475,8 @@ footer p {
 
 
 
-
+/* 10. Media Queries
+======================================== */
 
 
 @media only screen and (max-width: 960px) {

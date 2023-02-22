@@ -145,8 +145,6 @@ img {
 
 
 
-
-
 /* 3. Layout Styles
 ======================================== */
 
@@ -287,10 +285,6 @@ button:hover {
   background-color: #743C20;
   transition: 0s;
 }
-
-
-
-
 
 
 input, textarea {

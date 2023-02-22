@@ -1,12 +1,30 @@
 /**
-* Template Name: BestLoan Sample Template 1
+* Template Name: BestLoan Sample Template 3: Blue
 * Author: Sam Prowse, Tabrasa
-*/
 
+Index:
+  1. Global
+  2. Typography
+  3. Layout
+  4. Components
+  5. Navigation Section
+  6. Banner Section
+  7. Sections General
+  8. About Section
+  9. Products Section
+  10. Team Section
+  11. Testimonials Section
+  12. Blog Section
+  14. Footer
+  15. Media Queries
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+======================================== */
+
+/* 1. Global
+======================================== */
+
+@import url("page-styles.css");
+
 :root {
   --primary-color: #4b60a3;
   --secondary-color: #76b5fa;
@@ -21,6 +39,11 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+
+
+
+/* 2. Typography
+======================================== */
 
 h1, h2, h3, h5, h6 {
   font-family: 'Merriweather', serif;
@@ -74,6 +97,10 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 
+
+/* 3. Layout
+======================================== */
+
 .container {
   margin: 0 auto;
 }
@@ -92,10 +119,8 @@ a:active { text-decoration: none; }
 
 
 
-
-/*--------------------------------------------------------------
-# Buttons
---------------------------------------------------------------*/
+/* 4. Components
+======================================== */
 
 .button {
   padding:1em 1.25em 1em 1.25em;
@@ -177,10 +202,8 @@ a:active { text-decoration: none; }
 
 
 
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* 5. Navigation
+======================================== */
 
 .header {
   width: 90%;
@@ -205,9 +228,9 @@ a:active { text-decoration: none; }
     float: left;
 }
 
-/*--------------------------------------------------------------
-# Banner
---------------------------------------------------------------*/
+
+/* 6. Banner
+======================================== */
 
 .banner {
   position: relative;
@@ -248,19 +271,12 @@ a:active { text-decoration: none; }
   height: 6px;
 }
 
-.page-banner {
-  height: 200px;
-  background-image: url("img/page-banner.jpg");
-  background-size: cover;
-  background-color: #999;
-  background-position: center center;
-}
 
 
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
+
+/* 7. Sections General
+======================================== */
 
 .about, .team, .testimonials, .blog, .products {
   padding: 60px 20px 100px 20px;
@@ -274,9 +290,9 @@ a:active { text-decoration: none; }
 }
 
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+
+/* 8. About Section
+======================================== */
 
 .about {
   background-color: var(--bg-dark);
@@ -305,9 +321,10 @@ a:active { text-decoration: none; }
   margin-bottom: 40px;
 }
 
-/*--------------------------------------------------------------
-# Products Section
---------------------------------------------------------------*/
+
+
+/* 9. Products Section
+======================================== */
 
 .products {
   background-color: #f7faff;
@@ -325,27 +342,11 @@ a:active { text-decoration: none; }
   margin-bottom: 10px;
 }
 
-.products-page {
-  max-width: 80%;
-  margin: auto;
-  padding: 60px 0px 100px 0px;
-  text-align: center;
-}
-
-.products-page h2{
-  margin-bottom: 30px;
-}
-
-.products-page img {
-  width: 200px;
-  margin: auto;
-}
 
 
 
-/*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
+/* 10. Team Section
+======================================== */
 
 .team {
   background-color: var(--bg-med);
@@ -368,41 +369,12 @@ a:active { text-decoration: none; }
   margin-bottom: 40px;
 }
 
-.team-page {
-   padding: 60px 20px 200px 20px; 
-}
-
-.team-page h2{
-  text-align: center;
-}
-
-.team-page .row {
-  width: 85%;
-  margin: auto;
-}
-
-.team-page .col {
-  padding-bottom: 40px;
-}
 
 
-.team-page img {
-  width: 200px;
-  padding: 20px;
-}
 
-.team-page p {
-  margin-bottom: 20px;
-}
 
-.team-page .button-2{
-  float: left;
-  margin-right: 10px;
-}
-
-/*--------------------------------------------------------------
-# Testimonial Section
---------------------------------------------------------------*/
+/* 11. Testimonials Section
+======================================== */
 
 .testimonials {
   background-color: var(--bg-dark);
@@ -435,9 +407,8 @@ a:active { text-decoration: none; }
 }
 
 
-/*--------------------------------------------------------------
-# Blog Section
---------------------------------------------------------------*/
+/* 12. Blog Section
+======================================== */
 
 .blog .col {
   margin: 35px 0px 35px 0px;
@@ -453,109 +424,12 @@ a:active { text-decoration: none; }
 }
 
 
-/*--------------------------------------------------------------
-# Blog Page
---------------------------------------------------------------*/
-
-.blog-page {
-   padding: 60px 20px 100px 20px; 
-}
-
-.blog-page h2 {
-  text-align: center;
-}
-
-.blog-page .row {
-  width: 85%;
-  margin: auto;
-}
-
-.blog-page h2 {
-  margin-bottom: 60px;
-}
-
-.blog-page img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.blog-page .button-2{
-  margin-bottom: 30px;
-}
-
-.blog-page h2 {
-  margin-bottom: 60px;
-}
-
-.article h2 {
-  margin-bottom: 60px;
-}
 
 
 
 
-/*--------------------------------------------------------------
-# Article Section
---------------------------------------------------------------*/
-
-.article {
-  max-width: 80%;
-  margin: auto;
-  padding: 60px 0px 100px 0px;
-}
-
-.article h2{
-    margin-bottom: 30px;
-}
-
-.article-image {
-    float: right;
-    margin-left: 20px;
-}
-
-
-
-/*--------------------------------------------------------------
-# Blog Page
---------------------------------------------------------------*/
-
-.blog-page {
-  max-width: 80%;
-  margin: auto;
-  padding: 60px 0px 100px 0px; 
-}
-
-.blog-page .row {
-  width: 90%;
-  margin: auto;
-}
-
-.blog-page h2 {
-  margin-bottom: 60px;
-}
-
-.blog-page img {
-  margin-bottom: 20px;
-}
-
-.blog-page .button-2{
-  margin-bottom: 30px;
-}
-
-.blog-page h2 {
-  margin-bottom: 60px;
-}
-
-.article h2 {
-  margin-bottom: 60px;
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* 13. Footer
+======================================== */
 
 .footer {
   padding: 50px 30px;
@@ -637,12 +511,6 @@ input[type=submit]:hover {
   background-color: #6178c2;
 }
 
-
-
-/*--------------------------------------------------------------
-# Copyright
---------------------------------------------------------------*/
-
 .copyright {
   padding: 20px 30px 20px 30px;
   font-size: 12px;
@@ -665,9 +533,8 @@ input[type=submit]:hover {
 
 
 
-/*--------------------------------------------------------------
-# Media Queries
---------------------------------------------------------------*/
+/* 14. Media Queries
+======================================== */
 
 @media (max-width: 400px) { 
     

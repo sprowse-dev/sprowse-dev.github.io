@@ -1,0 +1,140 @@
+/**
+* Template Name: BestLoan Sample Template 2 - Page Styles
+* Author: Sam Prowse, Tabrasa
+
+Index:
+  1. About Page 
+  2. Team Page
+  3. Blog Page
+  4. Article Page
+  
+
+/* 1. About Page
+======================================== */
+
+
+.about-page {
+  max-width: 80%;
+  margin: auto;
+  padding: 60px 0px 100px 0px;
+}
+
+.about-page h2{
+    margin-bottom: 30px;
+}
+
+.about-image {
+    float: right;
+    margin-left: 20px;
+}
+
+
+
+/* 2. Blog Page
+======================================== */
+
+.blog-page {
+  max-width: 80%;
+  margin: auto;
+  padding: 60px 0px 100px 0px; 
+}
+
+.blog-page .row {
+  width: 90%;
+  margin: auto;
+}
+
+
+.blog-page .col {
+  margin: 35px 0px 35px 0px;
+}
+
+.blog-page img {
+  width: 270px;
+  margin-bottom: 20px;
+} 
+
+.blog-page .row {
+  text-align: left;
+}
+
+.blog-page h2 {
+  margin-bottom: 60px;
+}
+
+.blog-page img {
+  margin-bottom: 20px;
+}
+
+.blog-page .button-2{
+  margin-bottom: 30px;
+}
+
+.blog-page h2 {
+  margin-bottom: 60px;
+}
+
+
+
+/* 3. Team Page
+======================================== */
+
+.team-page h2 {
+  margin-bottom: 60px;
+}
+
+.team-page p {
+  margin-bottom: 10px;
+}
+
+.team-page h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.team-page .row {
+  margin-bottom: 40px;
+}
+
+.team-profile img {
+  float: left;
+  margin-right: 20px;
+}
+
+.team-profile {
+  text-align: left;
+}
+
+.team-profile h2 {
+  text-align: left;
+}
+
+.team-profile .p {
+  float: left;
+}
+
+.team-profile .button-2 {
+  float: left;
+}
+
+
+
+/* 1. Article Page
+======================================== */
+
+
+.article {
+  max-width: 80%;
+  margin: auto;
+  padding: 60px 0px 100px 0px;
+}
+
+.article h2 {
+  margin-bottom: 30px;
+}
+
+.article-image {
+    float: right;
+    margin-left: 20px;
+}
+
