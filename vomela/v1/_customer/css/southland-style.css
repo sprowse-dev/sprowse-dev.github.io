@@ -1,0 +1,303 @@
+/*
+* Template Name: Southland Test
+* Author: Sam Prowse
+
+Index:
+  1. General
+  2. Flex Overrides
+  3. Custom Elements
+  4. Form
+  5. Inputs and Buttons
+  6. Keyframes
+  7. Media Queries
+
+======================================== */
+
+/* 1. General
+======================================== */
+
+@import url("../../css/global.css");
+@import url("../../css/help.css");
+@import url("../../css/login.css");
+
+/* Sofia Pro font - Adobe Typekit */
+@import url("https://use.typekit.net/ypd0gvu.css");
+
+
+:root {
+  --primary-orange: #ff4d00;
+  --primary-black: 29, 27, 28;
+  --bg-gray: 238, 236, 233;
+  font-size: 16pt;
+}
+
+* {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 300;
+  font-size: 16pt;
+}
+
+body {
+  background-color: black;
+  position: relative;
+}
+
+/* 2. Flex Overrides
+======================================== */
+
+:root
+{
+	--help-delay-start: 8000ms;
+}
+
+@keyframes LogoMove
+{
+	0% { bottom: 0%; opacity: 100%; }
+	100% { bottom: 5%; opacity: 100%; }
+}
+
+#Page_Footer {
+  opacity: 0;
+  animation: LogoMove 500ms ease-in-out 5200ms forwards;
+}
+
+#Page_Footer::before
+{
+	animation: FLEX 1500ms ease-in-out 5600ms forwards;
+}
+
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -2;
+}
+
+/* 3. Custom Elements
+======================================== */
+
+.orange {
+  background-color: var(--primary-orange);
+  content: "";
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  animation: slideUp 1s ease-in-out 3200ms forwards;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.arrow {
+  width: 33px;
+  position: relative;
+  top: 0vh;
+  margin: 0 auto 5px auto;
+  opacity: 0;
+  rotate: 90deg;
+  animation: popIn 1s ease-in-out 0.5s forwards,
+             arrowSpin 0.5s ease-in-out 2s forwards,
+             arrowUp 1s ease-in-out 3s forwards;
+}
+
+.tail {
+  width: 3px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 30vh;
+  transform: scaleY(0);
+  animation: tailSlide 800ms ease-in-out 3150ms forwards;
+  transform-origin: bottom;
+}
+
+/* 4. Form
+======================================== */
+
+form {
+  text-align: center;
+  width: 40%;
+  position: relative;
+  top: 15vh;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.9);
+  opacity: 0;
+  animation: slideUp2 1.5s ease-in-out 3000ms forwards;
+}
+
+form::before {
+  content: url('../images/ui/logo-300.png');
+  opacity: 0;
+  animation: buttonPop 300ms ease-in-out 4500ms forwards;
+}
+
+/* 5. Inputs and Buttons
+======================================== */
+
+input {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+  width: 100%;
+  margin: 10px auto;
+  border: none;
+}
+
+input[type=email]{
+  margin-top: 30px;
+  vertical-align: top;
+  opacity: 0;
+  animation: buttonPop 300ms ease-in-out 4550ms forwards;
+}
+
+input[type=password]{
+  opacity: 0;
+  animation: buttonPop 300ms ease-in-out 4600ms forwards;
+}
+
+::placeholder { 
+  color: rgb(133, 133, 133);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(133, 133, 133);
+}
+
+input:focus{
+  outline: none;
+}
+
+button {
+  background-color: rgba(var(--primary-black), 1);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 14px 30px 16px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-family: "sofia-pro", sans-serif;
+}
+
+button:hover{
+  background-color: var(--primary-orange);
+  color: white;
+}
+
+button:active {
+  background-color: var(--primary-orange);
+  color: white;
+  transform: scale(1.1);
+  transition: .1s;
+}
+
+button.login {
+  opacity: 0;
+  animation: buttonPop 300ms linear 4650ms forwards;
+}
+
+button.register {
+  opacity: 0;
+  animation: buttonPop 300ms linear 4700ms forwards;
+}
+
+button.forgot {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 200;
+  display: block;
+  margin: 10px auto;
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 800ms linear 5000ms forwards; 
+}
+
+button.forgot:hover{
+  color: var(--primary-orange);
+}
+
+/* 6. Keyframes
+======================================== */
+
+@keyframes slideUp {
+  0% { height: 100vh; }
+  100% { height: 0px; }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+  60% { opacity: .9; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes arrowSpin {
+  0% { rotate: 0deg; }
+  100% { rotate: 360deg; }
+}
+
+@keyframes arrowUp {
+  0%{ transform: translateY(0px); }
+  100% { transform: translateY(-700px); }
+}
+
+@keyframes tailSlide {
+  0% { transform: scaleY(0); }
+  50% { transform: scaleY(2); }
+  100% { transform: translateY(-700px); }
+}
+
+@keyframes slideUp2 {
+  0% { opacity: 1; transform: translateY(2000px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes buttonPop { 
+  0% { opacity: 0; transform: scale(0.5); }
+  95% { opacity: 1; transform: scale(1.2); }
+  98% { opacity: 1; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* 7. Media Queries
+======================================== */
+
+@media (max-width: 900px) { 
+    form {
+      width: 70%;
+    }    
+}
+
+@media (max-width: 750px) {
+    form {
+      width: 80%;
+    }
+}
+
+@media (max-width: 650px) { 
+    form {
+      width: 90%;
+    }    
+}
