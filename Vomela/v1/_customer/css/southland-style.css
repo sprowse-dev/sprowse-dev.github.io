@@ -16,9 +16,9 @@ Index:
 /* 1. General
 ======================================== */
 
-@import url("https://sprowse-dev.github.io/Vomela/v1/assets/css/global.css");
-@import url("https://sprowse-dev.github.io/Vomela/v1/assets/css/help.css");
-@import url("https://sprowse-dev.github.io/Vomela/v1/assets/css/login.css");
+@import url("../../css/global.css");
+@import url("../../css/help.css");
+@import url("../../css/login.css");
 
 /* Sofia Pro font - Adobe Typekit */
 @import url("https://use.typekit.net/ypd0gvu.css");
@@ -28,12 +28,13 @@ Index:
   --primary-orange: #ff4d00;
   --primary-black: 29, 27, 28;
   --bg-gray: 238, 236, 233;
+  font-size: 16pt;
 }
 
 * {
   font-family: "sofia-pro", sans-serif;
   font-weight: 300;
-  font-size: 12pt; 
+  font-size: 16pt;
 }
 
 body {
@@ -128,7 +129,7 @@ form {
 }
 
 form::before {
-  content: url('https://sprowse-dev.github.io/vomela/v1/_customer/images/ui/logo-300.png');
+  content: url('../images/ui/logo-300.png');
   opacity: 0;
   animation: buttonPop 300ms ease-in-out 4500ms forwards;
 }

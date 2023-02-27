@@ -28,12 +28,13 @@ Index:
   --primary-orange: #ff4d00;
   --primary-black: 29, 27, 28;
   --bg-gray: 238, 236, 233;
+  font-size: 16pt;
 }
 
 * {
   font-family: "sofia-pro", sans-serif;
   font-weight: 300;
-  font-size: 12pt; 
+  font-size: 16pt;
 }
 
 body { 
