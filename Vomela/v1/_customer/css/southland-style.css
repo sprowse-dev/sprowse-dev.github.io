@@ -128,7 +128,7 @@ form {
 }
 
 form::before {
-  content: url('https://sprowse-dev.github.io/Vomela/v1/_customer/images/ui/logo-300.png');
+  content: url('https://sprowse-dev.github.io/vomela/v1/_customer/images/ui/logo-300.png');
   opacity: 0;
   animation: buttonPop 300ms ease-in-out 4500ms forwards;
 }
