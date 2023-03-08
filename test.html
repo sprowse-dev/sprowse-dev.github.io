@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <title>Tester</title>
+ 
+
+<style>
+body {
+  margin: 0;
+}
+    
+header {
+    background-color: green;
+    color: white;
+    margin: 0;
+}
+    
+.logo {
+  padding: 20px;
+}
+    
+nav {
+  display: flex;
+}
+    
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navLinks li {
+  display: inline;
+  padding: 10px;
+}
+    
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  display: none;
+}
+    
+@keyframes fadeIn {
+    0% { opacity:0 };
+    100% { opacity: 1 };
+}
+    
+@media only screen and (max-width: 700px) {
+
+    #navLinks {
+      opacity: 0;
+      background-color: gray;
+      width: 100%;
+    }
+    
+    #navLinks li {
+      display: block;
+    }
+    
+    #navLinks li:hover {
+      background-color: azure;
+      color: black;
+    }
+    
+    .hamburger {
+      display: inline;
+    }
+    
+    .navAnimate {
+      animation: fadeIn 500ms ease-in-out;
+    }
+
+}
+    
+    
+</style>
+    
+<script>
+    
+    function toggleNav() {
+        var links = document.getElementById("navLinks");
+      
+  document.getElementById('navLinks').className = 'navAnimate';
+
+        if (links.style.display === "block") {
+            links.style.display = "none";
+        }
+        else {
+            links.style.display = "block";
+        }
+    }
+
+    
+</script>
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><a href="#home" class="logo">Logo</a></div>
+        <nav>
+            
+            <ul id="navLinks">
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+            </ul>
+            <a id="hamburger" class="hamburger" onclick="toggleNav()">=</a>
+        </nav>
+    </header>
+    <section>
+        Hellow World
+    </section>
+    
+</body>
+</html>

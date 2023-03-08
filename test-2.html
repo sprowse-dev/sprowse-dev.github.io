@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    
+<style>
+
+img {
+  height: 0;
+}
+
+.show {
+  animation: cssAnimation 400ms ease forwards;
+}
+    
+.hide {
+  animation: cssAnimation2 400ms ease forwards;
+}
+
+@keyframes cssAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+@keyframes cssAnimation2 {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 0px;
+  }
+}
+    
+</style>
+
+<script>
+
+function ani() {
+  var element = document.getElementById('img');
+  if (element.classList.contains('hide')) {
+      element.classList.remove('hide');
+      element.classList.add('show');
+  }
+  else if (element.classList.contains('show')){
+      element.classList.remove('show');
+      element.classList.add('hide');
+  }
+  else {
+      element.classList.add('show');
+  }
+  
+}
+    
+</script>
+    
+</head>
+    
+<body>
+    
+<input name="" type="button" onclick="ani()" value="Click">
+    
+<img id="img" src="https://i.stack.imgur.com/vghKS.png" width="328" height="328" />
+    
+</body>
+
+
+</html>
+
+
+
