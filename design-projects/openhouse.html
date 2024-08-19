@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <!-- =======================================================
+    * Title: Portfolio Site
+    * Author: Sam Prowse
+    ======================================================== -->
+      
+      
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+      
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+      
+    <!--Custom Scripts-->
+    <script src="functions.js" type="text/javascript"></script>
+    
+      
+      
+    <title>Sam Prowse</title>
+  </head>
+    
+    
+    
+    
+  <body>
+      
+    <div class="container-fluid pt-5 pb-5">
+        <header class="sticky-top" style="display: none;">
+            <div class="container text-center">
+                <img class="profile mb-4" src="img/samp.jpg" width="150" height="150" alt="Photo of Sam"/>
+                <h1 class="title">Sam Prowse</h1>
+                <h4 class="font-weight-lighter mb-4">Web & Graphic Designer</h4>
+                
+                
+                <!--Email/Resume Button Section-->
+                <div class="button-div" style="display:none;">
+                    <button class="btn btn-primary pt-1 pb-2 email-button button-hover">      
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="btn btn-outline-primary resume-button button-hover">Resume</button>
+                </div>
+                
+                <div class="row justify-content-center email-section" style="display: none;">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mt-5">
+                            <div class="card card-body">
+                                <!-- The text field -->
+                                
+                                <input type="text" value="sprowseart@gmail.com" id="emailAddress">
+
+                                <!-- The button used to copy the text -->
+                                <button type="button" onclick="copyToClip()" class="btn btn-primary button-copy">Copy</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Email/Resume Button Section End-->
+                
+                
+                <!--Resume Dropdown Section-->
+                
+                
+                <div class="row justify-content-center resume-section" style="display: none;">
+                    <div class="col-12 col-md-9 col-lg-6">
+                        <div class="mt-5 mb-5 border-top pt-5">
+                            <h5 class="title text-primary">Education</h5>
+                            <h6 class="subtitle">The College of New Jersey  
+                            <span class="text-small font-weight-light">| 2009-2013</span></h6><p class="font-weight-light">BFA Digital Art<br>Minor Computer Science</p>
+                            
+                            <br>
+                            
+                            <h5 class="title text-primary">Certificates</h5>
+                            <h6 class="subtitle">Codecademy</h6>
+                            <p class="font-weight-light">
+                                
+                               
+                                HTML, CSS, Javascript
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/html-cert.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/css-cert.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/javascript-cert.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                
+                                <br>
+                                
+                                PHP
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/php-cert.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+
+                                <br>
+
+                                SQL
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/sql-cert.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                                 
+                                <br>
+                                Bootstrap
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/bootstrap-cert.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                            </p>
+
+                            <h6 class="subtitle">Udemy</h6>
+                            <p class="font-weight-light">
+                                
+                               
+                                Complete Wordpress Theme and Plugin Development Course
+                                <span class="badge badge-pill badge-primary py-1 px-1 align-middle">
+                                    <a href="certs/udemy-cert-1.pdf" target="_blank">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                                        </svg>
+                                    </a>
+                                </span>
+                            
+                            <br>
+                            
+                            <h5 class="title text-primary">Work Experience</h5>
+                            <h6 class="subtitle">ThinkDM2
+                            <span class="text-small font-weight-light">| 2023-Present</span></h6>
+                            <p class="font-weight-light">Front-End Developer & UI/UX Designer</p>
+                            
+                            <br>
+                                
+                            <h6 class="subtitle">Tabrasa, LLC
+                            <span class="text-small font-weight-light">| 2014-Present</span></h6>
+                            <p class="font-weight-light">Senior Web and Graphic Designer</p>
+                            
+                            <br>
+                            
+                            <h6 class="subtitle">Hopeworks 'N Camden
+                            <span class="text-small font-weight-light">| March - November 2014</span></h6>
+                            <p class="font-weight-light">Web and UX Designer</p>
+                            
+                            <br>
+                            
+                            <h6 class="subtitle">The Green Economy
+                            <span class="text-small font-weight-light">| Fall 2012</span></h6>
+                            <p class="font-weight-light">Web Development Intern</p>
+                            
+                            <br>
+                            
+                            <h6 class="subtitle">The College of New Jersey
+                            <span class="text-small font-weight-light">| May 2013 - March 2014</span></h6>
+                            <p class="font-weight-light">Wordpress Web Designer and Content Manager</p>
+                            
+                            <br>
+                            <button type="button" class="btn btn-outline-primary button-hover" onclick="document.location='https://www.linkedin.com/in/sam-prowse-aa316058/'">Linkedin</button>
+                            
+                            <button type="button" class="btn btn-outline-primary button-hover" onclick="document.location='img/SProwse-Resume.pdf'">PDF Resume</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </header>
+    </div>
+
+      
+    <main class="container-fluid pt-5 project-section">
+     
+        <div class="container">
+            
+            <div><img src="img/openhouse-1.jpg" /></div>
+            <div><img src="img/openhouse-2.jpg" /></div>
+            <div><img src="img/openhouse-3.jpg" /></div>
+            
+        </div>
+       
+     
+
+                
+        
+    </main>
+        
+    <footer>
+        <div class="container text-center pt-5 pb-3">
+            <h5 class="title">Portfolio Site</h5>
+            <p class="text-muted mb-4">HTML, CSS, Bootstrap, jQuery</p>
+            <p class="text-muted text-small font-weight-lighter">&copy 2025 Sam Prowse</p>
+        </div>
+    </footer>
+
+
+  </body>
+</html>
